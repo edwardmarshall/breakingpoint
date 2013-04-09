@@ -12,7 +12,7 @@ class ServicesController < Devise::OmniauthCallbacksController
 		redirect_to services_path
 	end
 
-	def service_login(provider, uid, email, name, firstname, lastname)
+	def service_login(provider, uid, email, name, firstname, lastname, location, gender)
 		# continue only if the provider and uid exist
 		if uid != '' and provider != ''
 
@@ -47,7 +47,7 @@ class ServicesController < Devise::OmniauthCallbacksController
 							lastname = lastname[0,39] if lastname.length > 39	# otherwise our user validation will hit us
 
 							# new user, set email, a random password and take the name from the authentication service
-							user = User.new :email => email, :password => SecureRandom.hex(10), :firstname => firstname, :lastname => lastname, :haslocalpw => false
+							user = User.new :email => email, :password => SecureRandom.hex(10), :firstname => firstname, :lastname => lastname, :location => location, :gender => gender, :haslocalpw => false
 
 							# add this authentication service to our new user
 							user.services.build(:provider => provider, :uid => uid, :uname => name, :uemail => email)
@@ -117,7 +117,10 @@ class ServicesController < Devise::OmniauthCallbacksController
 			omniauth['info']['first_name'] ? firstname = omniauth['info']['first_name'] : firstname = ''
 			omniauth['info']['last_name'] ? lastname = omniauth['info']['last_name'] : lastname = ''
 
-			service_login(provider, uid, email, name, firstname, lastname)
+			omniauth['info']['location'] ? location = omniauth['info']['location'] : location = ''
+			omniauth['extra']['raw_info']['gender'] ? gender = omniauth['extra']['raw_info']['gender'] : gender = ''
+
+			service_login(provider, uid, email, name, firstname, lastname, location, gender)
 
 		else
 			# Error if for some reason we didn't get omniauth or params[:service]
