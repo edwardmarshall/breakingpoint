@@ -18,14 +18,12 @@ Breakingpoint::Application.configure do
   config.action_mailer.raise_delivery_errors = false
   # config.action_mailer.delivery_method = :test    # use this to NOT send emails in development mode
 
-  # Send emails via Gmail
+  # Send emails via AWS SES
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address              => "smtp.gmail.com",
-    :port                 => 587,
-    :domain               => 'gmail.com',
-    :user_name            => ENV['GMAIL_USERNAME'],
-    :password             => ENV['GMAIL_PASSWORD'],
+    :address              => "email-smtp.us-east-1.amazonaws.com",
+    :user_name            => ENV['SES_USERNAME'],
+    :password             => ENV['SES_PASSWORD'],
     :authentication       => 'plain',
     :enable_starttls_auto => true
   }
