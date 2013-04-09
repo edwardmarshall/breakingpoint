@@ -101,29 +101,29 @@ class ServicesController < Devise::OmniauthCallbacksController
 
 	def facebook
 		# RENDER FOR TESTING JSON REQUEST
-		render :text => request.env["omniauth.auth"].to_json
+		# render :text => request.env["omniauth.auth"].to_json
 
-		# params[:action] ? service_route = params[:action] : service_route = 'no service (invalid callback)'
+		params[:action] ? service_route = params[:action] : service_route = 'no service (invalid callback)'
 
-		# omniauth = request.env['omniauth.auth']
-		# if omniauth and params[:action]
+		omniauth = request.env['omniauth.auth']
+		if omniauth and params[:action]
 
-		# 	# Get facebook params.
-		# 	# Provider, UID, Name (full), Email
-		# 	omniauth['provider'] ? provider = omniauth['provider'] : provider = ''
-		# 	omniauth['uid'] ? uid = omniauth['uid'] : uid = ''
-		# 	omniauth['info']['email'] ? email = omniauth['info']['email'] : email = ''
-		# 	omniauth['info']['name'] ? name = omniauth['info']['name'] : name = ''
-		# 	omniauth['info']['first_name'] ? firstname = omniauth['info']['first_name'] : firstname = ''
-		# 	omniauth['info']['last_name'] ? lastname = omniauth['info']['last_name'] : lastname = ''
+			# Get facebook params.
+			# Provider, UID, Name (full), Email
+			omniauth['provider'] ? provider = omniauth['provider'] : provider = ''
+			omniauth['uid'] ? uid = omniauth['uid'] : uid = ''
+			omniauth['info']['email'] ? email = omniauth['info']['email'] : email = ''
+			omniauth['info']['name'] ? name = omniauth['info']['name'] : name = ''
+			omniauth['info']['first_name'] ? firstname = omniauth['info']['first_name'] : firstname = ''
+			omniauth['info']['last_name'] ? lastname = omniauth['info']['last_name'] : lastname = ''
 
-		# 	service_login(provider, uid, email, name, firstname, lastname)
+			service_login(provider, uid, email, name, firstname, lastname)
 
-		# else
-		# 	# Error if for some reason we didn't get omniauth or params[:service]
-		# 	flash[:error] = 'Error while authenticating via ' + service_route.capitalize + '.'
-		# 	redirect_to new_user_session_path
-		# end
+		else
+			# Error if for some reason we didn't get omniauth or params[:service]
+			flash[:error] = 'Error while authenticating via ' + service_route.capitalize + '.'
+			redirect_to new_user_session_path
+		end
 	end
 
 	# def twitter
