@@ -13,3 +13,40 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore Procfile and environment config
+Procfile
+*.env
+
+# Always Ignore Extensions
+*.diff
+*.err
+*.orig
+*.rej
+#.swo
+*.swp
+*.vi*
+*~
+*.sass-cache
+
+# OS or Editor Folders
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime*
+
+# Dreamweaver added files (who still uses Dreamweaver?!)
+_notes
+dwsync.xml
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# Other folder to ignore
+.svn
