@@ -6,14 +6,15 @@ ActiveAdmin.register User do
 	filter :email
 	filter :firstname, :label => "First Name"
 	filter :lastname, :label => "Last Name"
+	filter :location
 	filter :created_at
 	filter :updated_at
 
 	scope :all, :default => true
 	scope :confirmed
 	scope :unconfirmed
-	#scope :male
-	#scope :female
+	scope :male
+	scope :female
 
 	index do
 		selectable_column
