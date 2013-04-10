@@ -114,11 +114,11 @@ class ServicesController < Devise::OmniauthCallbacksController
 			omniauth['uid'] ? uid = omniauth['uid'] : uid = ''
 			omniauth['info']['email'] ? email = omniauth['info']['email'] : email = ''
 			omniauth['info']['name'] ? name = omniauth['info']['name'] : name = ''
-			omniauth['info']['first_name'] ? firstname = omniauth['info']['first_name'] : firstname = ''
-			omniauth['info']['last_name'] ? lastname = omniauth['info']['last_name'] : lastname = ''
+			omniauth['info']['first_name'] ? firstname = omniauth['info']['first_name'].capitalize : firstname = ''
+			omniauth['info']['last_name'] ? lastname = omniauth['info']['last_name'].capitalize : lastname = ''
 
 			omniauth['info']['location'] ? location = omniauth['info']['location'] : location = ''
-			omniauth['extra']['raw_info']['gender'] ? gender = omniauth['extra']['raw_info']['gender'] : gender = ''
+			omniauth['extra']['raw_info']['gender'] ? gender = omniauth['extra']['raw_info']['gender'].capitalize : gender = ''
 
 			service_login(provider, uid, email, name, firstname, lastname, location, gender)
 

@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(:version => 20130410193240) do
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
     t.string   "firstname"
-    t.text     "lastname"
+    t.string   "lastname"
     t.boolean  "haslocalpw",             :default => true,  :null => false
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false

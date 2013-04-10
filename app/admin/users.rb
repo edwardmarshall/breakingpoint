@@ -4,8 +4,8 @@ ActiveAdmin.register User do
 	#actions :index, :show, :destroy
 
 	filter :email
-	filter :firstname
-	filter :lastname
+	filter :firstname, :label => "First Name"
+	filter :lastname, :label => "Last Name"
 	filter :created_at
 	filter :updated_at
 
@@ -65,7 +65,7 @@ ActiveAdmin.register User do
 		end
 		f.inputs "Extra Info" do
 			f.input :location
-			f.input :gender
+			f.input :gender, :as => :select, :collection => ["Male", "Female"]
 		end
 		f.buttons
 	end
