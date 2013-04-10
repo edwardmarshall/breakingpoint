@@ -19,4 +19,9 @@ class User < ActiveRecord::Base
   scope :female, where(:gender => 'Female')
   scope :confirmed, where('confirmed_at is not null')
   scope :unconfirmed, where(:confirmed_at => nil)
+
+
+  def state
+    confirmed_at.nil? ? "INCOMPLETE" : "COMPLETE"
+  end
 end
