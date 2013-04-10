@@ -14,4 +14,9 @@ class User < ActiveRecord::Base
 
   validates :firstname, :length => { :maximum => 40 }
   validates :lastname, :length => { :maximum => 40 }
+
+  scope :male, where('gender is "Male"')
+  scope :female, where('gender is "Female"')
+  scope :confirmed, where('confirmed_at is not null')
+  scope :unconfirmed, where(:confirmed_at => nil)
 end

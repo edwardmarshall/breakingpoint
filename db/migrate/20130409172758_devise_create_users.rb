@@ -35,7 +35,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
       # Additional Information
       t.string   :firstname
-      t.text     :lastname
+      t.string   :lastname
       t.boolean  :haslocalpw, :null => false, :default => true
 
 
