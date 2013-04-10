@@ -9,7 +9,7 @@ ActiveAdmin.register User do
 	filter :created_at
 	filter :updated_at
 
-	#scope :all, :default => true
+	scope :all, :default => true
 	#scope :confirmed
 	#scope :unconfirmed
 	#scope :male
