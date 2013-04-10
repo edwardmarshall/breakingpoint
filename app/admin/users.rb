@@ -10,10 +10,10 @@ ActiveAdmin.register User do
 	filter :updated_at
 
 	scope :all, :default => true
-	#scope :confirmed
-	#scope :unconfirmed
-	scope :male
-	scope :female
+	scope :confirmed
+	scope :unconfirmed
+	#scope :male
+	#scope :female
 
 	index do
 		selectable_column
