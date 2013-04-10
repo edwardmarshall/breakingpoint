@@ -12,8 +12,8 @@ ActiveAdmin.register User do
 	scope :all, :default => true
 	#scope :confirmed
 	#scope :unconfirmed
-	#scope :male
-	#scope :female
+	scope :male
+	scope :female
 
 	index do
 		selectable_column
