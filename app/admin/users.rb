@@ -1,6 +1,6 @@
 ActiveAdmin.register User do
 	
-	config.batch_actions = true
+	#config.batch_actions = true
 	#actions :index, :show, :destroy
 
 	filter :email
@@ -9,11 +9,11 @@ ActiveAdmin.register User do
 	filter :created_at
 	filter :updated_at
 
-	scope :all, :default => true
-	scope :confirmed
-	scope :unconfirmed
-	scope :male
-	scope :female
+	#scope :all, :default => true
+	#scope :confirmed
+	#scope :unconfirmed
+	#scope :male
+	#scope :female
 
 	index do
 		selectable_column
