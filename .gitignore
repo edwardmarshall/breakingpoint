@@ -15,7 +15,7 @@
 /tmp
 
 # Ignore Procfile and environment config
-Procfile
+# Procfile
 *.env
 
 # Always Ignore Extensions
