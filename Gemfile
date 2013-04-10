@@ -47,6 +47,12 @@ gem 'jquery-rails'
 # User Authentication
 gem 'devise'
 
+# User Authorization
+gem 'cancan'
+
+# Active Admin
+gem 'activeadmin'
+
 # Validate URLS
 gem 'validate_url'
 
