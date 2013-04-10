@@ -18,6 +18,18 @@ ActiveAdmin.register_page "Dashboard" do
             end
         end
 
+        column do
+            panel "Last Logins" do
+                table_for User.order('current_sign_in_at desc').limit(30).each do |user|
+                    column(:current_sign_in_at)
+                    column(:last_sign_in_at)
+                    column("First Name", :firstname)
+                    column("Last Name", :lastname)
+                    column(:email)
+                end
+            end
+        end
+
     end
   end # content
 end
