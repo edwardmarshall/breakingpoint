@@ -16,7 +16,7 @@ ActiveAdmin.register User do
 	scope :male
 	scope :female
 
-	index do
+	index :download_links => [:csv] do
 		selectable_column
 		id_column
 		column :email
@@ -69,5 +69,16 @@ ActiveAdmin.register User do
 			f.input :gender, :as => :select, :collection => ["Male", "Female"]
 		end
 		f.buttons
+	end
+
+	csv do
+		column :id
+		column :email
+		column("First Name") { |user| user.firstname }
+		column("Last Name") { |user| user.lastname }
+		column :gender
+		column :location
+		column :created_at
+		column :confirmed_at
 	end
 end

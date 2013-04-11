@@ -37,6 +37,13 @@ class ServicesController < Devise::OmniauthCallbacksController
 							# Add service to existing User
 							existinguser.services.create(:provider => provider, :uid => uid, :uname => name, :uemail => email)
 
+							# Update record with info
+							existinguser.firstname = firstname
+							existinguser.lastname = lastname
+							existinguser.gender = gender
+							existinguser.location = location
+							existinguser.save!
+
 							flash[:notice] = 'Sign in via ' + provider.capitalize + ' has been added to your account ' + existinguser.email + '. Signed in successfully!'
 							sign_in_and_redirect(:user, existinguser)
 						else
@@ -80,6 +87,12 @@ class ServicesController < Devise::OmniauthCallbacksController
 				auth = Service.find_by_provider_and_uid(provider, uid)
 
 				if !auth
+					current_user.firstname = firstname
+					current_user.lastname = lastname
+					current_user.gender = gender
+					current_user.location = location
+					current_user.save!
+
 					current_user.services.create(:provider => provider, :uid => uid, :uname => name, :uemail => email)
 					flash[:notice] = 'Sign in via ' + provider.capitalize + ' has been added to your account.'
 					redirect_to root_path
