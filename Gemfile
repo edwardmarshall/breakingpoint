@@ -7,6 +7,7 @@ gem 'rails', '3.2.12'
 
 group :development do
 	gem 'sqlite3'
+	gem 'faker'
 end
 
 group :production do
