@@ -16,7 +16,7 @@ ActiveAdmin.register User do
 	scope :male
 	scope :female
 
-	index :download_links => [:csv] do
+	index :download_links => [:csv] do |users|
 		selectable_column
 		id_column
 		column :email
@@ -27,6 +27,9 @@ ActiveAdmin.register User do
 		column :created_at
 		column :updated_at
 		column :confirmed_at
+		column "Providers" do |user|
+			user.services.map { |service| service.provider }
+		end
 
 		default_actions
 	end
