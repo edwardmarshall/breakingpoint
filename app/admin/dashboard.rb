@@ -6,7 +6,7 @@ ActiveAdmin.register_page "Dashboard" do
     columns do
 
         column do
-            panel "Recent Users" do
+            panel "Recent Signups" do
                 table_for User.order('id desc').limit(30).each do |user|
                     column("Confirmed Email")     {|user| status_tag(user.state) }
                     column(:email)      {|user| link_to(user.email, admin_user_path(user)) }
@@ -20,7 +20,7 @@ ActiveAdmin.register_page "Dashboard" do
 
         column do
             panel "Last Logins" do
-                table_for User.order('current_sign_in_at desc').limit(30).each do |user|
+                table_for User.where('current_sign_in_at is not null').order('current_sign_in_at desc').limit(30).each do |user|
                     column(:current_sign_in_at)
                     column(:last_sign_in_at)
                     column("First Name", :firstname)
