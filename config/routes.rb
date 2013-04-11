@@ -16,5 +16,5 @@ Breakingpoint::Application.routes.draw do
   # match '/auth/:provider/callback', to: 'services#create'
   resources :services, :only => [:index]
 
-  match "/vip" => "page#vip"
+  match "/vip" => "page#vip", as: 'vip'
 end
