@@ -15,4 +15,6 @@ Breakingpoint::Application.routes.draw do
   # Setup OmniAuth
   # match '/auth/:provider/callback', to: 'services#create'
   resources :services, :only => [:index]
+
+  match "/vip" => "page#vip"
 end

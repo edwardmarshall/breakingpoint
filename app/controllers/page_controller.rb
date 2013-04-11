@@ -10,4 +10,8 @@ class PageController < ApplicationController
 
 	def congratulations
 	end
+
+	def vip
+		authenticate_user!
+	end
 end
