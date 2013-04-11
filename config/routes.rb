@@ -3,7 +3,7 @@ Breakingpoint::Application.routes.draw do
 
   ActiveAdmin.routes(self)
 
-  devise_for :users, :controllers => { :omniauth_callbacks => 'services', :registrations => 'registrations' }
+  devise_for :users, :controllers => { :omniauth_callbacks => 'services', :registrations => 'registrations' }, :path => '', :path_names => { :sign_in => 'login', :sign_out => 'logout', :password => 'password_reset', :confirmation => 'confirmation', :unlock => 'unlock', :registration => 'register', :sign_up => 'signup' }
   # devise_for :users, :path => "auth", :path_names =>  { :sign_in => 'login', :sign_out => 'logout', :password => 'password_reset', :confirmation => 'confirmation', :unlock => 'unlock', :registration => 'register', :sign_up => 'signup' }
   
   devise_scope :users do
