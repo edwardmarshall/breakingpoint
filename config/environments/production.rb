@@ -79,4 +79,8 @@ Breakingpoint::Application.configure do
     :authentication       => 'plain',
     :enable_starttls_auto => true
   }
+
+  config.to_prepare { Devise::SessionsController.force_ssl }
+  config.to_prepare { Devise::RegistrationsController.force_ssl }
+  config.to_prepare { Devise::PasswordsController.force_ssl }
 end
