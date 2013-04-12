@@ -22,12 +22,16 @@
 		<div class="header-top">
 			<div class="container">
 				<div class="site-logo">
-					<a href=""><h1>Breaking Point</h1></a>
+					<%= link_to(root_path) do %>
+					<h1>Breaking Point</h1>
+					<% end %>
 				</div>
 
+				<% if not user_signed_in? %>
 				<div class="site-header-btn">
-					<a class="btn btn-success btn-block">Get FREE VIP Access</a>
+					<%= link_to "Get FREE VIP Access", new_user_registration_path, :class => "btn btn-success btn-block" %>
 				</div>
+				<% end %>
 			</div>
 		</div>
 

@@ -10,7 +10,7 @@
 	margin-bottom: 75px;
 
 	.header-top {
-		background-color: #eee;
+		background: image-url("header-top.png") center top no-repeat;
 		height: 444px;
 		
 		.container {
@@ -48,9 +48,10 @@
 	}
 
 	.header-bottom {
-		background-color: $black;
+		background: image-url("header-bottom.jpg") center top no-repeat;
 		color: $white;
 		height: 44px;
+		width: 100%; //specifying width here so later we can do postion: fixed;
 
 		.site-header-nav {
 			position: relative;
