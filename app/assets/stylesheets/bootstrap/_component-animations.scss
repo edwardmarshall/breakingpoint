@@ -20,3 +20,274 @@
     height: auto;
   }
 }
+
+.shake {
+  @include animation-fill-mode(both);
+  @include animation-duration(0.3s);
+  @include animation-name(shake);
+}
+
+.slide-in {
+  @include animation-fill-mode(both);
+  @include animation-duration(0.8s);
+  @include animation-name(slideIn);
+}
+
+.pop-in {
+  @include animation-fill-mode(both);
+  @include animation-duration(0.3s);
+  @include animation-name(popIn);
+}
+
+//
+// Keyframes
+// --------------------------------------------------
+
+// Shake
+@-webkit-keyframes shake {
+  0% {
+    @include translate(0px, 0);
+  }
+
+  25% {
+    @include translate(-10px, 0);
+  }
+
+  50% {
+    @include translate(10px, 0);
+  }
+
+  75% {
+    @include translate(-10px, 0);
+  }
+
+  100% {
+    @include translate(0px, 0);
+  }
+}
+
+@-moz-keyframes shake {
+  0% {
+    @include translate(0px, 0);
+  }
+
+  25% {
+    @include translate(-10px, 0);
+  }
+
+  50% {
+    @include translate(10px, 0);
+  }
+
+  75% {
+    @include translate(-10px, 0);
+  }
+
+  100% {
+    @include translate(0px, 0);
+  }
+}
+
+@-o-keyframes shake {
+  0% {
+    @include translate(0px, 0);
+  }
+
+  25% {
+    @include translate(-10px, 0);
+  }
+
+  50% {
+    @include translate(10px, 0);
+  }
+
+  75% {
+    @include translate(-10px, 0);
+  }
+
+  100% {
+    @include translate(0px, 0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    @include translate(0px, 0);
+  }
+
+  25% {
+    @include translate(-10px, 0);
+  }
+
+  50% {
+    @include translate(10px, 0);
+  }
+
+  75% {
+    @include translate(-10px, 0);
+  }
+
+  100% {
+    @include translate(0px, 0);
+  }
+}
+
+
+// SlideIn
+@-webkit-keyframes slideIn {
+  0% {
+    @include translate(0, -49px);
+    opacity: 0;
+  }
+
+  50% {
+    @include translate(0, -49px);
+    opacity: 0;
+  }
+
+  82% {
+    @include translate(0, 5px);
+    @include animation-timing-function(ease-out);
+    opacity: 1;
+  }
+
+  100% {
+    @include translate(0, 0px);
+  }
+}
+
+@-moz-keyframes slideIn {
+  0% {
+    @include translate(0, -49px);
+    opacity: 0;
+  }
+
+  50% {
+    @include translate(0, -49px);
+    opacity: 0;
+  }
+
+  82% {
+    @include translate(0, 5px);
+    @include animation-timing-function(ease-out);
+    opacity: 1;
+  }
+
+  100% {
+    @include translate(0, 0px);
+  }
+}
+
+@-o-keyframes slideIn {
+  0% {
+    @include translate(0, -49px);
+    opacity: 0;
+  }
+
+  50% {
+    @include translate(0, -49px);
+    opacity: 0;
+  }
+
+  82% {
+    @include translate(0, 5px);
+    @include animation-timing-function(ease-out);
+    opacity: 1;
+  }
+
+  100% {
+    @include translate(0, 0px);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    @include translate(0, -49px);
+    opacity: 0;
+  }
+
+  50% {
+    @include translate(0, -49px);
+    opacity: 0;
+  }
+
+  82% {
+    @include translate(0, 5px);
+    @include animation-timing-function(ease-out);
+    opacity: 1;
+  }
+
+  100% {
+    @include translate(0, 0px);
+  }
+}
+
+
+// PopIn
+@-webkit-keyframes popIn {
+  0% {
+    @include scale(0.1);
+    opacity: 0;
+  }
+
+  82% {
+    @include scale(1.1);
+    @include animation-timing-function(ease-out);
+    opacity: 1;
+  }
+
+  100% {
+    @include scale(1);
+  }
+}
+
+@-moz-keyframes popIn {
+  0% {
+    @include scale(0.1);
+    opacity: 0;
+  }
+
+  82% {
+    @include scale(1.1);
+    @include animation-timing-function(ease-out);
+    opacity: 1;
+  }
+
+  100% {
+    @include scale(1);
+  }
+}
+
+@-o-keyframes popIn {
+  0% {
+    @include scale(0.1);
+    opacity: 0;
+  }
+
+  82% {
+    @include scale(1.1);
+    @include animation-timing-function(ease-out);
+    opacity: 1;
+  }
+
+  100% {
+    @include scale(1);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    @include scale(0.1);
+    opacity: 0;
+  }
+
+  82% {
+    @include scale(1.1);
+    @include animation-timing-function(ease-out);
+    opacity: 1;
+  }
+
+  100% {
+    @include scale(1);
+  }
+}

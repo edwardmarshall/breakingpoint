@@ -250,6 +250,65 @@
           box-shadow: $shadow;
 }
 
+// Animations
+@mixin animation($animation...) {
+  // Order:
+  // animation-name, animation-duration, animation-timing-function,
+  // animation-delay, animation-iteration-count, animation-direction,
+  // animation-fill-mode
+  -webkit-animation: $animation;
+     -moz-animation: $animation;
+      -ms-animation: $animation;
+       -o-animation: $animation;
+          animation: $animation;
+}
+
+@mixin animation-fill-mode($mode) {
+  -webkit-animation-fill-mode: $mode;
+     -moz-animation-fill-mode: $mode;
+      -ms-animation-fill-mode: $mode;
+       -o-animation-fill-mode: $mode;
+          animation-fill-mode: $mode;
+}
+
+@mixin animation-duration($duration) {
+  -webkit-animation-duration: $duration;
+     -moz-animation-duration: $duration;
+      -ms-animation-duration: $duration;
+       -o-animation-duration: $duration;
+          animation-duration: $duration;
+}
+
+@mixin animation-name($name) {
+  -webkit-animation-name: $name;
+     -moz-animation-name: $name;
+      -ms-animation-name: $name;
+       -o-animation-name: $name;
+          animation-name: $name;
+}
+
+@mixin animation-timing-function($value) {
+  // Values:
+  // linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(n,n,n,n)
+  -webkit-animation-timing-function: $value;
+     -moz-animation-timing-function: $value;
+          animation-timing-function: $value;
+}
+
+@mixin animation-iteration-count($iteration) {
+  -webkit-animation-iteration-count: $iteration;
+     -moz-animation-iteration-count: $iteration;
+       -o-animation-iteration-count: $iteration;
+          animation-iteration-count: $iteration;
+}
+
+@mixin animation-delay($delay) {
+  -webkit-animation-delay: $delay;
+     -moz-animation-delay: $delay;
+       -o-animation-delay: $delay;
+          animation-delay: $delay;
+}
+
 // Transitions
 @mixin transition($transition...) {
   -webkit-transition: $transition;
