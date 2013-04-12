@@ -66,7 +66,7 @@ Breakingpoint::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.action_mailer.default_url_options = { :host => 'hsbreakingpoint.com' }
+  config.action_mailer.default_url_options = { :host => 'breakingpoint.herokuapp.com' }
   # config.action_mailer.default_url_options = { :host => 'hsbreakingpoint.com' }
 
   # Send emails via AWS SES
