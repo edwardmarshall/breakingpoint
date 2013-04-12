@@ -18,7 +18,10 @@
 		}
 
 		.site-logo {
-			background-color: #ddd;
+			background-image: image-url("HSBP2.png");
+			background-image: image-url("HSBP2.svg");
+			background-repeat: no-repeat;
+			background-position: center center;
 			height: 444px;
 			margin: 0px auto;
 			position: relative;
@@ -116,7 +119,10 @@
 				width: 74px;
 
 				.mini-logo {
-					background-color: #666;
+					background-image: image-url("HS-logo-black.png");
+					background-image: image-url("HS-logo-black.svg");
+					background-repeat: no-repeat;
+					background-position: center center;
 					position: absolute;
 					top: 50%;
 					left: 50%;
