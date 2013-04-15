@@ -19,7 +19,7 @@ $(document).ready(function() {
 	$(document).on('click', '#nav a', function(){
 		var target = $(this);
 		var hash = this.hash;
-		var destination = $(hash).offset().top - 24;
+		var destination = $(hash).offset().top - 8;
 
 		stopAnimatedScroll();
 
