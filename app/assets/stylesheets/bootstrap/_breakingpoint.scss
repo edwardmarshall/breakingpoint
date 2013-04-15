@@ -56,6 +56,11 @@
 		height: 44px;
 		width: 100%; //specifying width here so later we can do postion: fixed;
 
+		&.fix {
+			position: fixed;
+			top: 0;
+		}
+
 		.site-header-nav {
 			position: relative;
 

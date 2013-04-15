@@ -15,7 +15,7 @@
 	<!-- PAGE HEAD -->
 	<%= yield :head %>
 </head>
-<body>
+<body class="home">
 	<%= render "shared/flash_message" %>
 
 	<header class="site-header">
@@ -35,16 +35,16 @@
 			</div>
 		</div>
 
-		<div class="header-bottom">
+		<div class="header-bottom" id="nav">
 			<div class="container">
 				<div class="site-header-nav">
 					<ul class="site-nav">
-						<li class="recap"><a href="">Recap</a></li>
-						<li class="the-truck"><a href="">The Truck</a></li>
-						<li class="vip-pass"><a href="">VIP Pass</a></li>
-						<li class="events"><a href="">Events</a></li>
-						<li class="faq"><a href="">FAQ</a></li>
-						<li class="network"><a href="">Network</a></li>
+						<li class="recap"><a href="#recap">Recap</a></li>
+						<li class="the-truck"><a href="#truck">The Truck</a></li>
+						<li class="vip-pass"><a href="#vip">VIP Pass</a></li>
+						<li class="events"><a href="#schedule">Events</a></li>
+						<li class="faq"><a href="#faq">FAQ</a></li>
+						<li class="network"><a href="#network">Network</a></li>
 					</ul>
 					<div class="site-nav-logo"><div class="mini-logo"></div></div>
 				</div>
@@ -54,7 +54,7 @@
 	
 	<%= yield %>
 
-	<footer class="site-footer">
+	<footer class="site-footer" id="network">
 		<div class="footer-top">
 			<div class="container">
 				<div class="footer-event-logo"></div>

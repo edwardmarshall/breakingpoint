@@ -21,16 +21,16 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "SSSocial";
-  src: url($cdnPath + 'fonts/ss-social-regular.eot?v=2');
-  src: url($cdnPath + 'fonts/ss-social-regular.eot?v=2#iefix') format('embedded-opentype'),
-       url($cdnPath + 'fonts/ss-social-regular.woff?v=2') format('woff'),
-       url($cdnPath + 'fonts/ss-social-regular.ttf?v=2') format('truetype'),
-       url($cdnPath + 'fonts/ss-social-regular.svg?v=2#SSSocialRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: "SSSocial";
+//   src: url($cdnPath + 'fonts/ss-social-regular.eot?v=2');
+//   src: url($cdnPath + 'fonts/ss-social-regular.eot?v=2#iefix') format('embedded-opentype'),
+//        url($cdnPath + 'fonts/ss-social-regular.woff?v=2') format('woff'),
+//        url($cdnPath + 'fonts/ss-social-regular.ttf?v=2') format('truetype'),
+//        url($cdnPath + 'fonts/ss-social-regular.svg?v=2#SSSocialRegular') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 /* This triggers a redraw in IE to Fix IE8's :before content rendering. */
 html:hover [class^="ss-"]{-ms-zoom: 1;}
