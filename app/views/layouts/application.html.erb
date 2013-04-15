@@ -15,7 +15,7 @@
 	<!-- PAGE HEAD -->
 	<%= yield :head %>
 </head>
-<body class="home">
+<body class="home" data-spy="scroll" data-target="#nav">
 	<%= render "shared/flash_message" %>
 
 	<header class="site-header" id="home">
@@ -38,7 +38,7 @@
 		<div class="header-bottom" id="nav">
 			<div class="container">
 				<div class="site-header-nav">
-					<ul class="site-nav">
+					<ul class="site-nav nav">
 						<li class="recap"><a href="#recap">Recap</a></li>
 						<li class="the-truck"><a href="#truck">The Truck</a></li>
 						<li class="vip-pass"><a href="#vip">VIP Pass</a></li>
