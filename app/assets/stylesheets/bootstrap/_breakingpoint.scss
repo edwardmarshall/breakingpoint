@@ -240,3 +240,25 @@ section.event-schedule {
 		}
 	}
 }
+
+section.faq {
+	.section-body {
+		ul {
+			//list-style-image: image-url("list-question.png");
+			list-style-image: url($cdnPath + "images/list-question.png");
+			margin: 0px 80px;
+			padding: 0;
+
+			li {
+				color: $linkColor;
+				cursor: pointer;
+				padding-bottom: 10px;
+
+				span {
+					color: $textColor;
+					//display: none;
+				}
+			}
+		}
+	}
+}
