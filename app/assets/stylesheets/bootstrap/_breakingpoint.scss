@@ -10,7 +10,7 @@
 	margin-bottom: 75px;
 
 	.header-top {
-		background: image-url("header-top.png") center top no-repeat;
+		background: url($cdnPath + "images/header-top.png") center top no-repeat;
 		height: 444px;
 		
 		.container {
@@ -18,8 +18,8 @@
 		}
 
 		.site-logo {
-			background-image: image-url("HSBP2.png");
-			background-image: image-url("HSBP2.svg");
+			background-image: url($cdnPath + "images/HSBP2.png");
+			background-image: url($cdnPath + "images/HSBP2.svg");
 			background-repeat: no-repeat;
 			background-position: center center;
 			height: 444px;
@@ -51,7 +51,7 @@
 	}
 
 	.header-bottom {
-		background: image-url("header-bottom.jpg") center top no-repeat;
+		background: url($cdnPath + "images/header-bottom.jpg") center top no-repeat;
 		color: $white;
 		height: 44px;
 		width: 100%; //specifying width here so later we can do postion: fixed;
@@ -119,8 +119,8 @@
 				width: 74px;
 
 				.mini-logo {
-					background-image: image-url("HS-logo-black.png");
-					background-image: image-url("HS-logo-black.svg");
+					background-image: url($cdnPath + "images/HS-logo-black.png");
+					background-image: url($cdnPath + "images/HS-logo-black.svg");
 					background-repeat: no-repeat;
 					background-position: center center;
 					position: absolute;
@@ -135,4 +135,62 @@
 		}
 	}
 
+}
+
+section {
+	margin-bottom: 75px;
+}
+
+.section-heading {
+	margin-top: 90px;
+	padding: 0 10px;
+
+	h2 {
+		margin-top: 0;
+		line-height: 1;
+	}
+}
+
+.section-body {
+	margin-top: 60px;
+	padding: 0px 10px;
+}
+
+.event-info {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.recap {
+	background: url($cdnPath + "images/HS-owners.jpg") center top no-repeat;
+	color: $white;
+	height: 518px;
+	margin-bottom: 0px;
+}
+
+.the-truck {
+	height: 500px;
+}
+
+.vip-pass {
+	.section-heading {
+		text-align: center;
+	}
+
+	.section-body {
+		ul {
+			list-style-image: url($cdnPath + "images/list-check.png?v-2");
+			margin: 0px 80px;
+			padding: 0;
+
+			li {
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
+
+.event-schedule {
+	background: url($cdnPath + "images/header-bottom.jpg") center top repeat-y;
+	min-height: 200px;
 }

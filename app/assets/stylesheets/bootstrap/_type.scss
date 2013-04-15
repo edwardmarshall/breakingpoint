@@ -74,12 +74,13 @@ h1,
 h2,
 h3 { line-height: $baseLineHeight * 2; }
 
-h1 { font-size: 42px; } // ~38px serif
-h2 { font-size: 36px; } // ~32px serif
-h3 { font-size: 30px; } // ~24px san-serif
-h4 { font-size: 24px; } // ~18px san-serif
-h5 { font-size: $baseFontSize; }
-h6 { font-size: $baseFontSize * 0.85; } // ~12px
+h1 { font-size: 42px; font-family: $serifFontFamily; } // ~38px serif
+h2 { font-size: 36px; font-family: $serifFontFamily; } // ~32px serif
+h3 { font-size: 30px; letter-spacing: -0.06em; } // ~24px san-serif
+h4 { font-size: 24px; letter-spacing: -0.06em; } // ~18px san-serif
+h4.bold { font-family: 'edward_mediumregular'; }
+h5 { font-size: 20px; letter-spacing: -0.06em; }
+h6 { font-size: $baseFontSize; letter-spacing: -0.06em; } // ~12px
 
 h1 small { font-size: $baseFontSize * 1.75; } // ~24px
 h2 small { font-size: $baseFontSize * 1.25; } // ~18px
@@ -170,10 +171,12 @@ dd {
 
 // Horizontal rules
 hr {
-  margin: $baseLineHeight 0;
+  background: url($cdnPath + 'images/hr.png') center top no-repeat;
+  height: 1px;
+  margin: 75px 0 54px 0;
+  padding-bottom: 19px;
   border: 0;
-  border-top: 1px solid $hrBorder;
-  border-bottom: 1px solid $white;
+  
 }
 
 // Abbreviations and acronyms

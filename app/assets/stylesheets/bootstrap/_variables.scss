@@ -44,8 +44,8 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 
 // Typography
 // -------------------------
-$sansFontFamily:        "edwardmarshall_bookregular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$sansFontFamily:        "edward_bookregular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       "marshall_book", Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          16px !default;
@@ -54,7 +54,7 @@ $baseLineHeight:        24px !default;
 $altFontFamily:         $serifFontFamily !default;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    bold !default;    // instead of browser default, bold
+$headingsFontWeight:    normal !default;    // instead of browser default, bold
 $headingsColor:         inherit !default; // empty to use BS default, $textColor
 
 
@@ -151,6 +151,7 @@ $zindexModal:             1050 !default;
 
 // Sprite icons path
 // -------------------------
+$cdnPath: 				  "//d31oswdpiq6274.cloudfront.net/app-assets/";
 $iconSpritePath:          image-path("glyphyicons-halflings.png") !default;
 $iconWhiteSpritePath:     image-path("glyphicons-halflings-white.png") !default;
 
