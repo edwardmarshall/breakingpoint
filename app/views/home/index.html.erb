@@ -1,3 +1,15 @@
+<section>
+	<div class="container">
+		<% if user_signed_in? %>
+			<%= link_to "My Profile", edit_user_registration_path %><br>
+			<%= link_to "Sign out", destroy_user_session_path, :method => :delete %><br>
+		<% else %>
+			<%= link_to "Sign in", new_user_session_path %><br>
+		<% end %>
+		<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+	</div>
+</section>
+
 <section class="event-info">
 	<div class="container">
 		<div class="event-time">
@@ -167,16 +179,4 @@
 				<li>How come you do multiple runs instead of just running it until it implodes?<br /><span>If we just wanted to watch it blow up we'd put it out in the parking lot with a stick of dynamite.</span></li>
 			</ul>
 		</div>
-</section>
-
-<section>
-	<div class="container">
-		<% if user_signed_in? %>
-			<%= link_to "My Profile", edit_user_registration_path %><br>
-			<%= link_to "Sign out", destroy_user_session_path, :method => :delete %><br>
-		<% else %>
-			<%= link_to "Sign in", new_user_session_path %><br>
-		<% end %>
-		<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
-	</div>
 </section>

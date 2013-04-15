@@ -66,4 +66,8 @@
 @import "bootstrap/utilities"; // Has to be last to override when necessary
 
 // Site Specific
-@import "bootstrap/breakingpoint"
+@import "bootstrap/breakingpoint";
+
+// SS Icons
+@import "bootstrap/ss-standard";
+@import "bootstrap/ss-social";

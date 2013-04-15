@@ -153,6 +153,7 @@
 		}
 
 		ul.social-btns {
+			font-size: 20px;
 			list-style: none;
 			line-height: 1;
 			margin: 0;
@@ -256,7 +257,7 @@ section.event-info {
 }
 
 section.recap {
-	background: url($cdnPath + "images/HS-owners.jpg") center top no-repeat;
+	background: url($cdnPath + "images/HS-owners.jpg?v=2") center top no-repeat;
 	color: $white;
 	height: 518px;
 	margin-bottom: 0px;
@@ -352,5 +353,14 @@ section.faq {
 				}
 			}
 		}
+	}
+}
+
+// RETINA CALLS
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	section.recap {
+		background: url($cdnPath + "images/HS-owners-x2.jpg") center top no-repeat;
+		background-size: 1340px 518px;
 	}
 }
