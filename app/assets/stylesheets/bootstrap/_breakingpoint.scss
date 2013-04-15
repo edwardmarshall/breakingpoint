@@ -159,10 +159,13 @@
 		padding: 75px 0;
 
 		.footer-event-logo {
-			background-color: #DDD;
+			background-image: url($cdnPath + "images/BP2-logo-black.png");
+			background-image: url($cdnPath + "images/BP2-logo-black.svg");
+			background-repeat: no-repeat;
+			background-position: center center;
 			margin: 0 auto;
 			margin-bottom: 75px;
-			height: 155px;
+			height: 152px;
 			width: 350px;
 		}
 
@@ -237,13 +240,16 @@
 		}
 
 		.footer-logo {
-			background-color: #444;
-			height: 48px;
-			width: 40px;
+			background-image: url($cdnPath + "images/hs-logo-white.png");
+			background-image: url($cdnPath + "images/hs-logo-white.svg");
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 40px;
+			width: 35px;
 			position: absolute;
 			right: 0;
 			top: 50%;
-			margin-top: -24px;
+			margin-top: -20px;
 		}
 	}
 }
