@@ -10,7 +10,7 @@
 	margin-bottom: 75px;
 
 	.header-top {
-		background: url($cdnPath + "images/header-top.png") center top no-repeat;
+		background: url($cdnPath + "images/hsHeader.jpg") center top no-repeat;
 		height: 444px;
 		
 		.container {
@@ -164,6 +164,10 @@
 				display: inline-block;
 				padding: 0px 10px;
 				line-height: 1;
+			}
+
+			a:hover {
+				text-decoration: none;
 			}
 		}
 
@@ -359,6 +363,11 @@ section.faq {
 // RETINA CALLS
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
+	.site-header .header-top {
+		background: url($cdnPath + "images/hsHeader-x2.jpg") center top no-repeat;
+		background-size: 1340px 444px;
+	}
+
 	section.recap {
 		background: url($cdnPath + "images/HS-owners-x2.jpg") center top no-repeat;
 		background-size: 1340px 518px;
