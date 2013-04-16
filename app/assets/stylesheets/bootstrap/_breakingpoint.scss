@@ -160,7 +160,7 @@
 	text-align: center;
 
 	.footer-top {
-		background: url($cdnPath + "images/light-gray-bg.jpg") center top repeat-y;
+		background: url($cdnPath + "images/hs-shop2.jpg") center bottom repeat-y;
 		padding: 75px 0;
 
 		.footer-event-logo {
@@ -400,8 +400,13 @@ section.faq {
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 	.site-header .header-top {
-		background: url($cdnPath + "images/hsHeader-x2.jpg") center top no-repeat;
+		background: url($cdnPath + "images/hsHeader-x2.jpg") center bottom no-repeat;
 		background-size: 1340px 444px;
+	}
+
+	.site-footer .footer-top {
+		background: url($cdnPath + "images/hs-shop2-x2.jpg") center top repeat-y;
+		background-size: 1340px 433px;
 	}
 
 	section.recap {
