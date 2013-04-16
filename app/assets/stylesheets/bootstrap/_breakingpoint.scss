@@ -93,7 +93,7 @@
 						}
 					}
 
-					&:first-child, &.events {
+					&.recap, &.events {
 						border-left: 1px dashed #666;
 
 						a {
@@ -109,6 +109,11 @@
 
 					&.events {
 						margin-left: 82px;
+					}
+
+					&.home {
+						display: none;
+						visibility: hidden;
 					}
 				}
 			}
