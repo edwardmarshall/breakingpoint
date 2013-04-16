@@ -12,8 +12,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :firstname, :lastname, :haslocalpw
   attr_accessible :location, :gender
 
-  validates :firstname, :length => { :maximum => 40 }
-  validates :lastname, :length => { :maximum => 40 }
+  validates :firstname, :length => { :maximum => 40 }, :presence => true
+  validates :lastname, :length => { :maximum => 40 }, :presence => true
 
   scope :male, where(:gender => 'Male')
   scope :female, where(:gender => 'Female')
