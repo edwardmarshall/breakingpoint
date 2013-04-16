@@ -1,5 +1,16 @@
-<p>Welcome <%= @email %>!</p>
+<p>You're almost done! Before we can send you your pass to the H&amp;S VIP Meet 'n' Greet, we need to make sure we have your permission. Confirm by clicking the link below.</p>
 
-<p>You can confirm your account email through the link below:</p>
+<p>
+-----------------------------------<br />
+CONFIRM BY VISITING THE LINK BELOW:<br />
+<%= link_to confirmation_url(@resource, :confirmation_token => @resource.confirmation_token), confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %><br />
+<br />
+Click the link above to give us permission to send you your pass. It's fast and easy! If you can't click the full URL above, please copy and paste it into your web browser.<br />
+-----------------------------------</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>
+<p>If you don't want the VIP treatment, simply ignore this message.</p>
+
+<p>Thank you,<br />
+- H&amp;S Crew</p>
+
+<p>H&amp;S Performance, 4160 South River Road, St. George, UT 84790, USA</p>
