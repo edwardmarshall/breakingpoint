@@ -12,10 +12,10 @@
 
 @font-face {
   font-family: "SSSocial";
-  src: url($cdnPath + 'fonts/ss-social-circle.eot?v=2');
-  src: url($cdnPath + 'fonts/ss-social-circle.eot?v=2#iefix') format('embedded-opentype'),
+  src: url('/fonts/ss-social-circle.eot?v=2');
+  src: url('/fonts/ss-social-circle.eot?v=2#iefix') format('embedded-opentype'),
        url($cdnPath + 'fonts/ss-social-circle.woff?v=2') format('woff'),
-       url($cdnPath + 'fonts/ss-social-circle.ttf?v=2') format('truetype'),
+       url('/fonts/ss-social-circle.ttf?v=2') format('truetype'),
        url($cdnPath + 'fonts/ss-social-circle.svg?v=2#SSSocialCircle') format('svg');
   font-weight: bold;
   font-style: normal;

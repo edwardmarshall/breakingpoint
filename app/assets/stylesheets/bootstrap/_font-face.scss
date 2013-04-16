@@ -1,9 +1,9 @@
 @font-face{
 	font-family:'edward_bookregular';
-	src:url($cdnPath + 'fonts/edward-book-webfont-a762c283.eot');
-	src:url($cdnPath + 'fonts/edward-book-webfont-a762c283.eot?#iefix') format("embedded-opentype"),
+	src:url('/fonts/edward-book-webfont-a762c283.eot');
+	src:url('/fonts/edward-book-webfont-a762c283.eot?#iefix') format("embedded-opentype"),
 		url($cdnPath + 'fonts/edward-book-webfont-f94bde4a.woff') format("woff"),
-		url($cdnPath + 'fonts/edward-book-webfont-095a7715.ttf') format("truetype"),
+		url('/fonts/edward-book-webfont-095a7715.ttf') format("truetype"),
 		url($cdnPath + 'fonts/edward-book-webfont-079e0b44.svg#edward_bookregular') format("svg");
 	font-weight:400;
 	font-style:normal
@@ -20,10 +20,10 @@
 // }
 @font-face{
 	font-family:'edward_mediumregular';
-	src:url($cdnPath + 'fonts/edward-medium-webfont-52a4cb7d.eot');
-	src:url($cdnPath + 'fonts/edward-medium-webfont-52a4cb7d.eot?#iefix') format("embedded-opentype"),
+	src:url('/fonts/edward-medium-webfont-52a4cb7d.eot');
+	src:url('/fonts/edward-medium-webfont-52a4cb7d.eot?#iefix') format("embedded-opentype"),
 		url($cdnPath + 'fonts/edward-medium-webfont-621a1662.woff') format("woff"),
-		url($cdnPath + 'fonts/edward-medium-webfont-94cff276.ttf') format("truetype"),
+		url('/fonts/edward-medium-webfont-94cff276.ttf') format("truetype"),
 		url($cdnPath + 'fonts/edward-medium-webfont-09f708f8.svg#edward_mediumregular') format("svg");
 	font-weight:400;
 	font-style:normal
@@ -40,10 +40,10 @@
 // }
 @font-face{
 	font-family:'marshall_book';
-	src:url($cdnPath + 'fonts/marshall-book-webfont-259bca47.eot');
-	src:url($cdnPath + 'fonts/marshall-book-webfont-259bca47.eot?#iefix') format("embedded-opentype"),
+	src:url('/fonts/marshall-book-webfont-259bca47.eot');
+	src:url('/fonts/marshall-book-webfont-259bca47.eot?#iefix') format("embedded-opentype"),
 		url($cdnPath + 'fonts/marshall-book-webfont-284ca63a.woff') format("woff"),
-		url($cdnPath + 'fonts/marshall-book-webfont-a02389c5.ttf') format("truetype"),
+		url('/fonts/marshall-book-webfont-a02389c5.ttf') format("truetype"),
 		url($cdnPath + 'fonts/marshall-book-webfont-9685a023.svg#marshall_book') format("svg");
 	font-weight:400;
 	font-style:normal

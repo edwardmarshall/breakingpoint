@@ -12,10 +12,10 @@
 
 @font-face {
   font-family: "SSStandard";
-  src: url($cdnPath + 'fonts/ss-standard.eot?v=2');
-  src: url($cdnPath + 'fonts/ss-standard.eot?v=2#iefix') format('embedded-opentype'),
+  src: url('/fonts/ss-standard.eot?v=2');
+  src: url('/fonts/ss-standard.eot?v=2#iefix') format('embedded-opentype'),
        url($cdnPath + 'fonts/ss-standard.woff?v=2') format('woff'),
-       url($cdnPath + 'fonts/ss-standard.ttf?v=2')  format('truetype'),
+       url('/fonts/ss-standard.ttf?v=2')  format('truetype'),
        url($cdnPath + 'fonts/ss-standard.svg?v=2#SSStandard') format('svg');
   font-weight: normal;
   font-style: normal;
