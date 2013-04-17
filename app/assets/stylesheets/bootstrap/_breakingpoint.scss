@@ -352,7 +352,7 @@ section.vip-pass {
 }
 
 section.event-schedule {
-	background: url($cdnPath + "images/black-bg.jpg") center top repeat-y;
+	background: url($cdnPath + "images/tools.jpg") center center no-repeat;
 	color: $white;
 	padding-bottom: 75px;
 
@@ -618,6 +618,11 @@ body.sessions {
 	section.the-truck {
 		background: url($cdnPath + "images/gmc-truck2-x2.jpg") center top no-repeat;
 		background-size: 1340px 500px;
+	}
+
+	section.event-schedule {
+		background: url($cdnPath + "images/tools-x2.jpg") center center no-repeat;
+		background-size: 1340px 740px;
 	}
 
 	section.signup {
