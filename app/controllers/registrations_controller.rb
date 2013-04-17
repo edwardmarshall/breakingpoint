@@ -1,4 +1,10 @@
 class RegistrationsController < Devise::RegistrationsController
+	def new
+		@body_class = "signup"
+
+		super
+	end
+
 	def update
 		@user = User.find(current_user.id)
 		if @user.haslocalpw

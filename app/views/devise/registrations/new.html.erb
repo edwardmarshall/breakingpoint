@@ -1,30 +1,92 @@
-<section>
+<section class="signup">
 	<div class="container">
+		<div class="row">
+			<div class="offset3 span6">
+				<ul class="checks">
+					<li>Access the LIVE VIP events</li>
+					<li>Go step-by-step through the build of our Dmax.</li>
+					<li>Take a virtual tour through H&amp;S headquarters.</li>
+					<li>$10 dollar discount on limited edition t-shirts.</li>
+					<li>Attend the Pre-Show Q&amp;A with Casey, Bentley, Payton and Zane.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row margin-top">
+			<div class="offset3 span6">
+				<h4 class="margin-top-none">Where should we send your VIP Pass?</h4>
+			</div>
+		</div>
 
-		<h2>Sign up</h2>
+		<div class="row">
+			<div class="offset3 span6">
+				<div class="row">
+					<div class="span6 register-facebook">
+						<a href="/auth/facebook" class="btn btn-primary">Become VIP via Facebook</a>
+						<span class="or">or</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset3 span6 register-form">
+				
+				
+				<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :class => 'form-horizontal' } ) do |f| %>
+				  <%= devise_error_messages! %>
 
-		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-		  <%= devise_error_messages! %>
+				  <div class="control-group">
+				  	<%= f.label :firstname, 'First Name:', :class => "control-label" %>
+				  	<div class="controls">
+				  		<%= f.text_field :firstname, :autofocus => true %>
+				  	</div>
+				  </div>
 
-		  <div><%= f.label :email %><br />
-		  <%= f.email_field :email, :autofocus => true %></div>
+				  <div class="control-group">
+				  	<%= f.label :lastname, 'Last Name:', :class => "control-label" %>
+				  	<div class="controls">
+				  		<%= f.text_field :lastname, :autofocus => true %>
+				  	</div>
+				  </div>
 
-		  <div><%= f.label :firstname, 'First Name' %><br />
-		  <%= f.text_field :firstname %></div>
+				  <div class="control-group">
+				  	<%= f.label :email, 'Email Address:', :class => "control-label" %>
+				  	<div class="controls">
+				  		<%= f.email_field :email, :autofocus => true %>
+				  	</div>
+				  </div>
 
-		  <div><%= f.label :lastname, 'Last Name' %><br />
-		  <%= f.text_field :lastname %></div>
+				  <div class="control-group">
+				  	<%= f.label :password, 'VIP Password:', :class => "control-label" %>
+				  	<div class="controls">
+				  		<%= f.password_field :password, :autofocus => true %>
+				  	</div>
+				  </div>
 
-		  <div><%= f.label :password %><br />
-		  <%= f.password_field :password %></div>
+				  <div class="control-group">
+				  	<%= f.label :password_confirmation, 'Password Again:', :class => "control-label" %>
+				  	<div class="controls">
+				  		<%= f.password_field :password_confirmation, :autofocus => true %>
+				  	</div>
+				  </div>
 
-		  <div><%= f.label :password_confirmation %><br />
-		  <%= f.password_field :password_confirmation %></div>
+				  <div class="control-group">
+				  	<div class="control-label"></div>
+				  	<div class="controls">
+				   		<%= f.submit "Get FREE VIP Access", :class => 'btn btn-success' %>
+				   	</div>
+				  </div>
+				<% end %>
 
-		  <div><%= f.submit "Sign up" %></div>
-		<% end %>
+				<div class="disclaimer">
+					100% privacy, 0% games. We promise never to spam you or share your email.
+				</div>
 
-		<%= render "devise/shared/links" %>
-
+				<ul class="links">
+					<li><%= link_to "Login", new_session_path(resource_name) %></li>
+					<li><%= link_to "Forgot your password?", new_password_path(resource_name) %></li>
+					<li><%= link_to "Resend confirmation email?", new_confirmation_path(resource_name) %></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </section>

@@ -6,6 +6,8 @@
 	z-index: 1000;
 }
 
+// HOME PAGE
+
 .site-header {
 	//margin-bottom: 75px;
 
@@ -51,7 +53,7 @@
 	}
 
 	.header-bottom {
-		background: url($cdnPath + "images/header-bottom.jpg") center top no-repeat;
+		background: url($cdnPath + "images/black-bg.jpg") center top no-repeat;
 		color: $white;
 		height: 44px;
 		width: 100%; //specifying width here so later we can do postion: fixed;
@@ -213,7 +215,7 @@
 	}
 
 	.footer-bottom {
-		background: url($cdnPath + "images/header-bottom.jpg") center top repeat-y;
+		background: url($cdnPath + "images/black-bg.jpg") center top repeat-y;
 		color: $white;
 		padding: 50px 0;
 
@@ -331,7 +333,7 @@ section.vip-pass {
 }
 
 section.event-schedule {
-	background: url($cdnPath + "images/header-bottom.jpg") center top repeat-y;
+	background: url($cdnPath + "images/black-bg.jpg") center top repeat-y;
 	color: $white;
 	padding-bottom: 75px;
 
@@ -396,6 +398,135 @@ section.faq {
 	}
 }
 
+// SIGN UP
+
+body.registrations, body.sessions {
+	background: url($cdnPath + "images/black-bg.jpg") center top repeat-y;
+	color: $white;
+
+	ul.checks {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			background: url($cdnPath + "images/list-check.png?v=2") left 3px no-repeat;
+			padding: 0px 0px 10px 30px;
+		}
+	}
+
+	#error_explanation {
+		color: lighten($red, 10%);
+		margin-bottom: 40px;
+
+		h2 {
+			font-size: 20px;
+			font-family: 'edward_bookregular';
+		}
+	}
+}
+
+section.signup {
+	background: url($cdnPath + "images/hs-crew.jpg") center top no-repeat;
+	min-height: 716px - 75;
+
+	form {
+		margin-top: 50px;
+
+		.control-label {
+			text-align: left;
+			width: 140px;
+		}
+
+		.controls {
+			margin-left: 160px;
+		}
+
+		input[type="text"],
+		input[type="password"],
+		input[type="email"] {
+			width: 300px - 14;
+		}
+	}
+
+	.register-form {
+		@include clearfix();
+		margin-bottom: 75px;
+	}
+
+	.disclaimer {
+		font-size: 11px;
+		line-height: 1;
+		margin: 40px 0;
+		text-align: center;
+	}
+
+	.register-facebook {
+		border-bottom: 1px solid $white;
+		position: relative;
+		padding-bottom: 50px;
+		text-align: center;
+		margin-top: 40px;
+
+		.or {
+			background-color: $black;
+			line-height: 1;
+			font-style: italic;
+			text-align: center;
+			width: 30px;
+			height: 20px;
+			position: absolute;
+			bottom: -11px;
+			left: 50%;
+			margin-left: -15px;
+		}
+
+		.btn .ss-icon {
+			vertical-align: baseline;
+			line-height: 1;
+		}
+	}
+
+	ul.links {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		font-size: 14px;
+
+		li {
+			border-left: 1px solid $white;
+			display: inline-block;
+			padding: 0px 10px;
+			line-height: 1;
+
+			&:first-child {
+				border-left: none;
+				padding-left: 0px;
+			}
+		}
+	}
+}
+
+// SIGNIN
+
+body.sessions {
+	
+}
+
+section.signup {
+	background: url($cdnPath + "images/hs-crew.jpg") center top no-repeat;
+	min-height: 716px - 75;
+
+	h4 {
+		text-align: center;
+	}
+
+	ul.links {
+		text-align: left;
+	}
+}
+
 // RETINA CALLS
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
@@ -417,5 +548,10 @@ section.faq {
 	section.the-truck {
 		background: url($cdnPath + "images/gmc-truck2-x2.jpg") center top no-repeat;
 		background-size: 1340px 500px;
+	}
+
+	section.signup {
+		background: url($cdnPath + "images/hs-crew-x2.jpg") center top no-repeat;
+		background-size: 1340px 716px;
 	}
 }

@@ -1,4 +1,5 @@
 class PageController < ApplicationController
+
 	def index
 	end
 
@@ -6,12 +7,16 @@ class PageController < ApplicationController
 	end
 
 	def reminder
+		@body_class = "reminder"
 	end
 
 	def congratulations
+		@body_class = "congratulations"
 	end
 
 	def vip
 		authenticate_user!
+
+		@body_class = "vip"
 	end
 end
