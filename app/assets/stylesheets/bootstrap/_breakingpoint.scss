@@ -61,6 +61,7 @@
 		&.fix {
 			position: fixed;
 			top: 0;
+			z-index: 100;
 		}
 
 		.site-header-nav {
@@ -303,6 +304,24 @@ section.recap {
 		margin-top: 90px;
 		//margin-top: 75px;
 	}
+
+	.play-video-btn {
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	.play-video {
+		background-color: $white;
+		@include border-radius(4px);
+		color: $black;
+		display: inline-block;
+		font-family: 'SSStandard';
+		font-size: 30px;
+		line-height: 1;
+		padding: 14px 30px 10px 30px;
+		text-align: center;
+
+	}
 }
 
 section.the-truck {
@@ -392,6 +411,58 @@ section.faq {
 					color: $textColor;
 					//display: none;
 				}
+			}
+		}
+	}
+}
+
+section.network {
+	padding-top: 0px;
+
+	.section-heading {
+		h4 {
+			line-height: 36px;
+		}
+	}
+
+	.section-body {
+		padding: 0px;
+		margin-top: 0px;
+
+		.network-sponsor {
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin-top: 75px;
+			position: relative;
+			height: 130px;
+			width: 100%;
+
+			a {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			&.complete-performance {
+				background-image: url($cdnPath + "images/sponsorLogo-completeperformance.png");
+				background-image: url($cdnPath + "images/sponsorLogo-completeperformance.svg");
+			}
+
+			&.rudys {
+				background-image: url($cdnPath + "images/sponsorLogo-rudys.png");
+				background-image: url($cdnPath + "images/sponsorLogo-rudys.svg");
+			}
+
+			&.thoroughbred {
+				background-image: url($cdnPath + "images/sponsorLogo-thoroughbred.png");
+				background-image: url($cdnPath + "images/sponsorLogo-thoroughbred.svg");
+			}
+
+			&.dieselsellerz {
+				background-image: url($cdnPath + "images/sponsorLogo-dieselSellerz.png");
+				background-image: url($cdnPath + "images/sponsorLogo-dieselSellerz.svg");
 			}
 		}
 	}
