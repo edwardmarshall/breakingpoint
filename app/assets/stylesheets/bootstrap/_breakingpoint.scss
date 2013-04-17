@@ -581,20 +581,20 @@ section.signup {
 // SIGNIN
 
 body.sessions {
+
+	section.signup {
+		background: url($cdnPath + "images/hs-crew2.jpg") center top no-repeat;
+		min-height: 716px - 75;
+
+		h4 {
+			text-align: center;
+		}
+
+		ul.links {
+			text-align: left;
+		}
+	}
 	
-}
-
-section.signup {
-	background: url($cdnPath + "images/hs-crew.jpg") center top no-repeat;
-	min-height: 716px - 75;
-
-	h4 {
-		text-align: center;
-	}
-
-	ul.links {
-		text-align: left;
-	}
 }
 
 // RETINA CALLS
@@ -622,6 +622,11 @@ section.signup {
 
 	section.signup {
 		background: url($cdnPath + "images/hs-crew-x2.jpg") center top no-repeat;
+		background-size: 1340px 716px;
+	}
+
+	body.sessions section.signup {
+		background: url($cdnPath + "images/hs-crew2-x2.jpg") center top no-repeat;
 		background-size: 1340px 716px;
 	}
 }
