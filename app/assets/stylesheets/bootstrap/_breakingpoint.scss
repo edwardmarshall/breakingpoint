@@ -399,7 +399,7 @@ section.faq {
 
 // SIGN UP
 
-body.registrations, body.sessions {
+body.registrations, body.sessions, body.maintenance {
 	background: url($cdnPath + "images/black-bg.jpg") center top repeat-y;
 	color: $white;
 

@@ -20,11 +20,11 @@ class ApplicationController < ActionController::Base
   def check_admin_mode
   	if current_user
   		if ENV['ADMIN_MODE'] == 'true' && controller_name != 'sessions' && !current_user.admin?
-  			redirect_to '/maintenance.html'
+  			render 'maintenance/index', :layout => 'maintenance'
   		end
   	else
   		if ENV['ADMIN_MODE'] == 'true' && controller_name != 'sessions'
-  			redirect_to '/maintenance.html'
+  			render 'maintenance/index', :layout => 'maintenance'
   		end
   	end
   end
