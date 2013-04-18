@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "noreply@hsbreakingpoint.com"
+  default from: "H&S Performance <noreply@hsbreakingpoint.com>"
 
   def congratulations_email(user)
   	@user = user

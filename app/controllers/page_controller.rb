@@ -11,6 +11,8 @@ class PageController < ApplicationController
 	end
 
 	def congratulations
+		authenticate_user!
+		
 		@body_class = "congratulations"
 	end
 
