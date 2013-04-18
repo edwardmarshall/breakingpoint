@@ -15,6 +15,10 @@ class ApplicationController < ActionController::Base
     vip_path
   end
 
+  def after_sign_out_path_for(resource)
+    root_url
+  end
+
   protected
 
   def check_admin_mode
