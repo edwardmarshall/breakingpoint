@@ -496,6 +496,11 @@ section.network {
 				background-image: url($cdnPath + "images/sponsorLogo-ats.png");
 				background-image: url($cdnPath + "images/sponsorLogo-ats.svg");
 			}
+
+			&.alligator {
+				background-image: url($cdnPath + "images/sponsorLogo-alligator.png");
+				background-image: url($cdnPath + "images/sponsorLogo-alligator.svg");
+			}
 		}
 	}
 }
