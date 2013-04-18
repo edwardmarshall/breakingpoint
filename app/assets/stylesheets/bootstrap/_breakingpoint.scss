@@ -597,6 +597,72 @@ body.sessions {
 	
 }
 
+// REMINDER PAGE
+
+body.reminder {
+	ul.checks {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			background: url($cdnPath + "images/list-check.png?v=2") left 3px no-repeat;
+			padding: 0px 0px 10px 30px;
+		}
+	}
+}
+
+.reminder-header {
+	background: url($cdnPath + "images/thumbsDown.jpg") center top no-repeat;
+	color: $white;
+	height: 563px;
+	
+	.container {
+		position: relative;
+		height: 100%;
+	}
+
+	h1 {
+		display: block;
+		font-size: 72px;
+		line-height: 1;
+		margin: 0;
+		padding: 0 10px;
+		position: absolute;
+		bottom: 75px;
+		left: 0;
+		width: 920px;
+	}
+}
+
+section.reminder {
+	margin-bottom: 75px;
+}
+
+.reminder-footer {
+	margin-bottom: 75px;
+
+	.hs-logo {
+		background-image: url($cdnPath + "images/HS-logo-black.png");
+		background-image: url($cdnPath + "images/HS-logo-black.svg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		display: inline-block;
+		height: 60px;
+		width: 60px;
+	}
+
+	.bp-logo {
+		background-image: url($cdnPath + "images/BP2-alone-black-small.png");
+		background-image: url($cdnPath + "images/BP2-alone-black.svg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		display: inline-block;
+		height: 60px;
+		width: 148px;
+	}
+}
+
 // RETINA CALLS
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
@@ -633,5 +699,10 @@ body.sessions {
 	body.sessions section.signup {
 		background: url($cdnPath + "images/hs-crew2-x2.jpg") center top no-repeat;
 		background-size: 1340px 716px;
+	}
+
+	.reminder-header {
+		background: url($cdnPath + "images/thumbsDown-x2.jpg") center top no-repeat;
+		background-size: 1340px 563px;
 	}
 }

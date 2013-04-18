@@ -1,5 +1,38 @@
-<section>
+<div class="reminder-header">
 	<div class="container">
-		<h1>Reminder page</h1>
+		<h1>Well, that's a bummer. <div class="clock pull-right"><span class="min">5</span>:<span class="sec">00</span></div></h1>
+	</div>
+</div>
+
+<section class="reminder">
+	<div class="container">
+		<p>Why?</p>
+		<p>You haven't confirmed your free pass to the H&amp;S VIP Meet 'n' Greet by clicking the link in your inbox.<br />
+		Not in your inbox? <strong>Don't forget to check your junk mail.</strong></p>
+
+		<p>That means you can't access...
+			<ul class="checks">
+				<li>Your step-by-step tour through the build of the Duramax.</li>
+				<li>The virtual tour of H&amp;S headquarters.</li>
+				<li>The $10 dollar VIP discount on limited edition t-shirt.</li>
+				<li>Pre-Show Q&amp;A with Casey, Bentley, Zane and Payton.</li>
+			</ul>
+		</p>
+
+		<p>We want you there.</p>
+
+		<p>So go to your email and click the confirmation link we just sent you. That way you can sit back, relax, and enjoy the show.</p>
+
+		<p>- The H&amp;S Crew</p>
+
+		<p class="text-center"><%= link_to "Didn't receive confirmation instructions?", new_confirmation_path("user") %><br />
+		<small>Make sure to check your junk mail.</small></p>
 	</div>
 </section>
+
+<div class="reminder-footer">
+	<div class="container text-center">
+		<div class="hs-logo"></div>
+		<div class="bp-logo"></div>
+	</div>
+</div>
