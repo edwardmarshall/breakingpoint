@@ -342,7 +342,7 @@ section.recap {
 		font-family: 'SSStandard';
 		font-size: 30px;
 		line-height: 1;
-		padding: 14px 30px 6px 30px;
+		padding: 14px 30px 6px 33px;
 		text-align: center;
 
 	}
@@ -512,6 +512,10 @@ body.registrations, body.sessions, body.maintenance {
 			height: 152px;
 			margin-bottom: 75px;
 		}
+
+		h4 {
+			text-align: center;
+		}
 	}
 
 	.hs-foot {
@@ -551,6 +555,12 @@ body.registrations, body.sessions, body.maintenance {
 section.signup {
 	background: url($cdnPath + "images/hs-crew.jpg") center top no-repeat;
 	min-height: 716px - 75;
+
+	.hs-head {
+		h4 {
+			text-align: center;
+		}
+	}
 
 	form {
 		margin-top: 50px;

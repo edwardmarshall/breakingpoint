@@ -65,10 +65,6 @@ $(document).ready(function() {
 				}
 			});
 		}
-
-		$('a.play-video').click(function(e) {
-			e.preventDefault();
-		});
 	}
 
 	if($('body').hasClass('reminder')) {
