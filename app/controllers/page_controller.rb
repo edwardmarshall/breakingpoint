@@ -18,5 +18,6 @@ class PageController < ApplicationController
 		authenticate_user!
 
 		@body_class = "vip"
+		@user = current_user
 	end
 end

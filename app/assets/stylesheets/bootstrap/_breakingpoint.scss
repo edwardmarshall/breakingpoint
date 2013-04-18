@@ -194,6 +194,30 @@
 			a:hover {
 				text-decoration: none;
 			}
+
+			li.facebook {
+				a:hover {
+					color: #3b5998;
+				}
+			}
+
+			li.twitter {
+				a:hover {
+					color: #00aced;
+				}
+			}
+
+			li.instagram {
+				a:hover {
+					color: #3b5998;
+				}
+			}
+
+			li.youtube {
+				a:hover {
+					color: #af2b26;
+				}
+			}
 		}
 
 		ul.social-pieces {
@@ -404,7 +428,7 @@ section.faq {
 			padding: 0;
 
 			li {
-				color: $linkColor;
+				color: $green;
 				padding-bottom: 10px;
 
 				span {
