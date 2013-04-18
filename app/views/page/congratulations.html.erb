@@ -7,39 +7,43 @@
 
 	<div class="congratz-body">
 		<div class="container">
-			<div class="offset1 span10">
-				<h1><%= current_user.firstname %>, you're done!</h1>
-				<h3>Congratulations, you're officially on our VIP list.</h3>
+			<div class="row">
+				<div class="offset1 span10">
+					<h1><%= current_user.firstname %>, you're done!</h1>
+					<h3>Congratulations, you're officially on our VIP list.</h3>
 
-				<p>You'll get an email within minutes with your discount code and link to the event.</p>
-				<p>- The H&amp;S Crew</p>
-				<p>P.S. Hook your buddies up, and help us spread the word at the same time.</p>
+					<p class="highlight">You'll get an email within minutes with your discount code and link to the event.</p>
+					<p>- The H&amp;S Crew</p>
+					<p>P.S. Hook your buddies up, and help us spread the word at the same time.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="congratz-footer">
 		<div class="container">
-			<div class="offset1 span10">
-				<div class="congratz-social">
-					<ul class="social">
-						<li>
-							<a href="http://facebook.com/sharer.php?u=http://www.breakingpoint2.com" target="_blank" onclick="window.open(this.href, 'targetWindow', 'toolbar=no, location=no, status=sno, menubar=no, scrollbars=yes, resizable=yes, width=600,height=400')">
-								<span class="ss-icon">facebook</span><br />
-								Share
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/intent/tweet?text=%40hsperformance+Definitely+not+gonna+miss+this&url=http%3A%2F%2Fwww.breakingpoint2.com&hashtags=BP2" target="_blank" onclick="window.open(this.href, 'targetWindow', 'toolbar=no, location=no, status=sno, menubar=no, scrollbars=yes, resizable=yes, width=600,height=400')">
-								<span class="ss-icon">twitter</span><br />
-								Tweet
-							</a>
-						</li>
-					</ul>
+			<div class="row">
+				<div class="offset1 span10">
+					<div class="congratz-social">
+						<ul class="social">
+							<li>
+								<a href="http://facebook.com/sharer.php?u=http://www.breakingpoint2.com" target="_blank" onclick="window.open(this.href, 'targetWindow', 'toolbar=no, location=no, status=sno, menubar=no, scrollbars=yes, resizable=yes, width=600,height=400')">
+									<span class="ss-icon">facebook</span><br />
+									Share
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/intent/tweet?text=%40hsperformance+Definitely+not+gonna+miss+this&url=http%3A%2F%2Fwww.breakingpoint2.com&hashtags=BP2" target="_blank" onclick="window.open(this.href, 'targetWindow', 'toolbar=no, location=no, status=sno, menubar=no, scrollbars=yes, resizable=yes, width=600,height=400')">
+									<span class="ss-icon">twitter</span><br />
+									Tweet
+								</a>
+							</li>
+						</ul>
+						<div class="hs-logo"></div>
+					</div>
 				</div>
-
-				<div class="hs-logo"></div>
 			</div>
+			<div class="row"><div class="offset1 span10 back"><%= link_to "Return to the Home Page", root_url %></div></div>
 		</div>
 	</div>
 </section>

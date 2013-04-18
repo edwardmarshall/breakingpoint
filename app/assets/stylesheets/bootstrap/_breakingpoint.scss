@@ -422,8 +422,8 @@ section.event-schedule {
 section.faq {
 	.section-body {
 		ul {
-			//list-style-image: image-url("list-question.png");
-			list-style-image: url($cdnPath + "images/list-question.png");
+			//list-style-image: image-url("list-question2.png");
+			list-style-image: url($cdnPath + "images/list-question2.png");
 			margin: 0px 80px;
 			padding: 0;
 
@@ -745,14 +745,27 @@ section.congratz {
 
 		p {
 			margin-bottom: 20px;
+
+			&.highlight {
+				display: inline-block;
+				background-color: $yellow;
+			}
 		}
 	}
 
 	.congratz-footer {
-		@include clearfix();
 		margin-bottom: 75px;
 
+		.congrats-social {
+			@include clearfix();
+		}
+
+		.back {
+			margin-top: 40px;
+		}
+
 		.congratz-social ul {
+			float: left;
 			list-style: none;
 			margin: 0;
 			padding: 0;
