@@ -46,7 +46,12 @@ ga('send', 'pageview');
 
 				<% if not user_signed_in? %>
 				<div class="site-header-btn">
+					<%= link_to "VIP Login", new_user_session_path, :class => "btn btn-primary btn-block" %>
 					<%= link_to "Get FREE VIP Access", new_user_registration_path, :class => "btn btn-success btn-block" %>
+				</div>
+				<% else %>
+				<div class="site-header-btn">
+					<%= link_to "Enter VIP Area", vip_path, :class => "btn btn-success btn-block" %>
 				</div>
 				<% end %>
 			</div>
