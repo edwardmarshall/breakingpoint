@@ -335,7 +335,7 @@ section.recap {
 	}
 
 	.play-video {
-		background-color: $white;
+		background-color: $linkColor;
 		@include border-radius(4px);
 		color: $black;
 		display: inline-block;
@@ -345,6 +345,9 @@ section.recap {
 		padding: 14px 30px 6px 33px;
 		text-align: center;
 
+		&:hover {
+			background-color: darken($linkColor, 10%);
+		}
 	}
 }
 
