@@ -6,7 +6,7 @@
 		url('/fonts/edward-book-webfont-095a7715.ttf') format("truetype"),
 		url($cdnPath + 'fonts/edward-book-webfont-079e0b44.svg#edward_bookregular') format("svg");
 	font-weight:400;
-	font-style:normal
+	font-style:normal;
 }
 // @font-face{
 // 	font-family:'edward_lightregular';
@@ -16,7 +16,7 @@
 // 		url($cdnPath + 'fonts/edward-light-webfont-909197cb.ttf') format("truetype"),
 // 		url($cdnPath + 'fonts/edward-light-webfont-e714931a.svg#edward_lightregular') format("svg");
 // 	font-weight:400;
-// 	font-style:normal
+// 	font-style:normal;
 // }
 @font-face{
 	font-family:'edward_mediumregular';
@@ -26,7 +26,7 @@
 		url('/fonts/edward-medium-webfont-94cff276.ttf') format("truetype"),
 		url($cdnPath + 'fonts/edward-medium-webfont-09f708f8.svg#edward_mediumregular') format("svg");
 	font-weight:400;
-	font-style:normal
+	font-style:normal;
 }
 // @font-face{
 // 	font-family:'edward_thinregular';
@@ -36,7 +36,7 @@
 // 		url($cdnPath + 'fonts/edward-thin-webfont-0ca969cc.ttf') format("truetype"),
 // 		url($cdnPath + 'fonts/edward-thin-webfont-94a88c75.svg#edward_thinregular') format("svg");
 // 	font-weight:400;
-// 	font-style:normal
+// 	font-style:normal;
 // }
 @font-face{
 	font-family:'marshall_book';
@@ -46,5 +46,5 @@
 		url('/fonts/marshall-book-webfont-a02389c5.ttf') format("truetype"),
 		url($cdnPath + 'fonts/marshall-book-webfont-9685a023.svg#marshall_book') format("svg");
 	font-weight:400;
-	font-style:normal
+	font-style:normal;
 }
