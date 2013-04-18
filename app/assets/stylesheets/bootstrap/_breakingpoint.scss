@@ -511,6 +511,15 @@ body.registrations, body.sessions, body.maintenance {
 			background-position: center center;
 			height: 152px;
 			margin-bottom: 75px;
+			position: relative;
+		}
+
+		a {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
 		}
 
 		h4 {
@@ -830,6 +839,15 @@ section.vip-page {
 		height: 230px;
 		margin: 40px 0px;
 		width: 300px;
+		position: relative;
+
+		a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
 	}
 
 	.vip-clock {
