@@ -64,8 +64,11 @@ class ServicesController < Devise::OmniauthCallbacksController
 							user.save!
 							# 	user.confirm!
 
+							# Send the user a second email          
+            				UserMailer.congratulations_email(user).deliver
+
 							# flash and sign in
-							flash[:notice] = 'Your account has been created via ' + provider.capitalize + '. In your profile you can change your personal information and add a local password.'
+							flash[:notice] = 'Your account has been created via ' + provider.capitalize + '.'
 							sign_in_and_redirect(:user, user)
 						end
 					end
