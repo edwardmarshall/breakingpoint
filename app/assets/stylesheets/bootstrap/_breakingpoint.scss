@@ -488,6 +488,11 @@ section.network {
 				background-image: url($cdnPath + "images/sponsorLogo-dieselSellerz.png");
 				background-image: url($cdnPath + "images/sponsorLogo-dieselSellerz.svg");
 			}
+
+			&.ats {
+				background-image: url($cdnPath + "images/sponsorLogo-ats.png");
+				background-image: url($cdnPath + "images/sponsorLogo-ats.svg");
+			}
 		}
 	}
 }
