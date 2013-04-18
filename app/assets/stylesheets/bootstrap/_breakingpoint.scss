@@ -503,6 +503,29 @@ body.registrations, body.sessions, body.maintenance {
 	background: $black;
 	color: $white;
 
+	.hs-head {
+		.bp-logo {
+			background-image: url($cdnPath + "images/BP2-logo-white.png");
+			background-image: url($cdnPath + "images/BP2-logo-white.svg");
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 152px;
+			margin-bottom: 75px;
+		}
+	}
+
+	.hs-foot {
+		.hs-logo {
+			background-image: url($cdnPath + "images/hs-logo-white.png");
+			background-image: url($cdnPath + "images/hs-logo-white.svg");
+			background-repeat: no-repeat;
+			background-position: center center;
+			margin: 0 auto 75px auto;
+			height: 40px;
+			width: 35px;
+		}
+	}
+
 	ul.checks {
 		list-style: none;
 		margin: 0;
@@ -565,7 +588,6 @@ section.signup {
 		position: relative;
 		padding-bottom: 50px;
 		text-align: center;
-		margin-top: 40px;
 
 		.or {
 			background-color: $black;
