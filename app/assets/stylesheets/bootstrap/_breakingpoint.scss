@@ -315,6 +315,17 @@ section {
 section.event-info {
 	text-align: center;
 	//margin-bottom: 60px;
+
+	h1, h3 {
+		margin: 0;
+	}
+
+	.event-time {
+		background-image: url($cdnPath + "images/livehd-black-70x78.png");
+		background-image: url($cdnPath + "images/livehd-black-70x78.svg");
+		background-repeat: no-repeat;
+		background-position: right 6px;
+	}
 }
 
 section.recap {
@@ -399,6 +410,28 @@ section.event-schedule {
 	.schedule-body {
 		background-color: #333;
 		padding: 60px 10px 20px 10px;
+		position: relative;
+
+		.icon {
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 35px;
+			width: 31px;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+
+			&.hd {
+				background-image: url($cdnPath + "images/livehd-ffff99-31x35.png");
+				background-image: url($cdnPath + "images/livehd-ffff99-31x35.svg");
+			}
+
+			&.vip {
+				background-image: url($cdnPath + "images/vippass-ffff99-31x35.png");
+				background-image: url($cdnPath + "images/vippass-ffff99-31x35.svg");
+				right: 51px;
+			}
+		}
 
 		h3 {
 			font-family: 'edward_mediumregular';
