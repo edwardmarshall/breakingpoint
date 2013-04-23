@@ -6,6 +6,10 @@
 	z-index: 1000;
 }
 
+.small-text {
+	font-size: 12px;
+}
+
 // HOME PAGE
 
 .site-header {
@@ -943,6 +947,70 @@ section.vip-page {
 	}
 }
 
+// LIVE EVENT PAGES
+
+section.video-player {
+	background: url($cdnPath + "images/black-bg.jpg") center top repeat-y;
+	margin-top: 75px;
+	padding: 75px 0;
+
+	.logo {
+		background-image: url($cdnPath + "images/HSBP2-small.png");
+		background-image: url($cdnPath + "images/HSBP2-small.svg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 230px;
+		width: 300px;
+		position: relative;
+	}
+
+	.event-time {
+		color: $linkColor;
+		font-size: 18px;
+		font-family: "edward_mediumregular";
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.the-stream {
+		background-color: $white;
+		min-height: 348px;
+	}
+}
+
+body.vip section.the-truck {
+	background: url($cdnPath + "images/gmc-truck3.jpg?v=3") center top no-repeat;
+	height: 365px;
+	margin-top: 0px;
+}
+
+section.spec-sheet {
+	padding-top: 0px;
+
+	.spec-text {
+		padding: 0px 10px;
+
+		h4 {
+			margin-top: 0;
+			padding-top: 0;
+			margin-bottom: 30px;
+		}
+
+		ul {
+			margin: 0;
+			margin-bottom: 30px;
+			padding: 0;
+
+			span {
+				color: #999;
+			}
+		}
+	}
+}
+
+// Meet-n-greet
+
+
 // RETINA CALLS
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
@@ -989,5 +1057,9 @@ section.vip-page {
 	section.vip-page {
 		background: url($cdnPath + "images/working-x2.png") center center no-repeat;
 		background-size: 1340px 563px;
+	}
+
+	body.vip section.the-truck {
+		background: url($cdnPath + "images/gmc-truck3-x2.jpg?v=3") center top no-repeat;
 	}
 }

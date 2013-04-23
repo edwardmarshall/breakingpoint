@@ -1,30 +1,6 @@
-<section class="vip-page">
-	<div class="container">
-		<div class="row">
-			<div class="offset7 span4">
-				<div class="vip-logo">
-					<a href="/"></a>
-				</div>
+<%= title "VIP - Breaking Point 2" %>
+<%= render @event %>
 
-				<!--<div class="vip-clock">
-					<ul>
-						<li><span class="day">00</span><br />Day<div class="sep">:</div></li>
-						<li><span class="hour">00</span><br />Hour<div class="sep">:</div></li>
-						<li><span class="min">00</span><br />Min<div class="sep">:</div></li>
-						<li><span class="sec">00</span><br />Sec</li>
-					</ul>
-				</div>-->
-
-				<div class="vip-event">
-					<!--<strong>Until the VIP</strong>-->
-					<strong>Tuesday April 23 @ 1:00pm (MST)</strong>
-					<h1>Meet 'n' Greet</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-	<div class="container text-center">
-		<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-	</div>
+<div class="container text-center margin-bottom">
+	<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+</div>
