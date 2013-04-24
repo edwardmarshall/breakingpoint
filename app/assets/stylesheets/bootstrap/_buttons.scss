@@ -172,6 +172,14 @@ input[type="button"] {
   @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
 }
 
+.btn-facebook {
+  @include buttonBackground(#3399cc, #336699);
+}
+
+.btn-twitter {
+  @include buttonBackground(#00ccff, #0099cc);
+}
+
 
 // Cross-browser Jank
 // --------------------------------------------------

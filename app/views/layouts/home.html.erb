@@ -6,9 +6,9 @@
 	<!-- META DATA -->
     <meta property="fb:app_id" content="631675286847452" />
     <meta property="og:url" content="http://www.breakingpoint2.com/"/>
-    <meta property="og:title" content="The Breaking Point 2 (via LIVE stream)"/>
+    <meta property="og:title" content="The Breaking Point 2 (LIVE NOW)"/>
     <meta property="og:description" content="In order for us to continue designing innovative products, every now-and-then we need to push a test vehicle to its absolute limits; we need to find its breaking point."/>
-    <meta property="og:image" content="https://s3.amazonaws.com/hsbreakingpoint/fb/FB-Share-Mim.png"/>
+    <meta property="og:image" content="https://s3.amazonaws.com/hsbreakingpoint/fb/liveShare.png"/>
 	<%= csrf_meta_tags %>
 
 	<!-- STYLESHEETS -->
@@ -35,26 +35,26 @@ ga('send', 'pageview');
 	<%= render "shared/flash_message" %>
 
 	<header class="site-header" id="top">
-		<div class="header-top">
+		<section class="video-player">
 			<div class="container">
-				<div class="site-logo">
-					<%= link_to(root_path) do %>
-					<h1>Breaking Point</h1>
-					<% end %>
-				</div>
+				<div class="row">
+					<div class="span4">
+						<div class="logo">
+						</div>
+						<div class="event-time">
+							Thursday @ 1:00 (MST)
+						</div>
+					</div>
 
-				<% if not user_signed_in? %>
-				<div class="site-header-btn">
-					<%= link_to "VIP Login", new_user_session_path, :class => "btn btn-primary btn-block" %>
-					<%= link_to "Get FREE VIP Access", new_user_registration_path, :class => "btn btn-success btn-block" %>
+					<div class="span8">
+						<!-- Video Player Here -->
+						<div class="the-stream">
+							<iframe src="http://new.livestream.com/accounts/3099177/events/2053286/player?width=620&height=349&autoPlay=true&mute=false" width="620" height="349" frameborder="0" scrolling="no"> </iframe>
+						</div>
+					</div>
 				</div>
-				<% else %>
-				<div class="site-header-btn">
-					<%= link_to "Enter VIP Area", vip_path, :class => "btn btn-primary btn-block" %>
-				</div>
-				<% end %>
 			</div>
-		</div>
+		</section>
 
 		<div class="header-bottom" id="nav">
 			<div class="container">
@@ -62,9 +62,9 @@ ga('send', 'pageview');
 					<ul class="site-nav nav">
 						<li class="home"><a href="#top"></a></li>
 						<li class="recap"><a href="#recap">Recap</a></li>
-						<li class="the-truck"><a href="#truck">The Truck</a></li>
-						<li class="vip-pass"><a href="#vip">VIP Pass</a></li>
-						<li class="events"><a href="#schedule">Events</a></li>
+						<li class="spec-sheet"><a href="#specs">Spec Sheets</a></li>
+						<li class="t-shirts"><a href="#tshirts">T-shirts</a></li>
+						<li class="giveaways"><a href="#giveaways">Giveaways</a></li>
 						<li class="faq"><a href="#faq">FAQ</a></li>
 						<li class="network"><a href="#network">Network</a></li>
 					</ul>
@@ -89,7 +89,7 @@ ga('send', 'pageview');
 					</ul>
 					<ul class="social-pieces">
 						<li>@hsperformance</li>
-						<li>#BP2</li>
+						<li>#hsbp2</li>
 					</ul>
 				</div>
 			</div>
@@ -106,6 +106,12 @@ ga('send', 'pageview');
 			</div>
 		</div>
 	</footer>
+
+	<% if user_signed_in? %>
+		<div class="site-logout">
+			<%= link_to "Sign out", destroy_user_session_path, :method => "delete" %>
+		</div>
+	<% end %>
 
 <script type="text/javascript">
 setTimeout(function(){var a=document.createElement("script");

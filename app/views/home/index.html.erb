@@ -1,15 +1,61 @@
-<section class="event-info">
+<% content_for :headscripts do %>
+<script type="text/javascript">
+	var reset = function(){
+		DISQUS.reset({
+			reload: true,
+			config: function() {
+				this.page.identifier = 'hsperformance';
+				this.page.url = 'http://www.breakingpoint2.com/#!hsperformance';
+			}
+		});
+	}
+</script>
+<% end %>
+
+<section class="discussion">
 	<div class="container">
-		<div class="event-time">
-			<h1>Thursday, April 25, 2013 @ 1:00pm (MST)</h1>
-			<h3>Watch it LIVE here at BreakingPoint2.com</h3>
-		</div>
+		<div class="row">
+			<div class="span6">
+				<div class="discussion-heading">
+					<h2>Social Dashboard <a href="https://twitter.com/intent/tweet?text=%40hsperformance+Definitely+not+gonna+miss+this&url=http%3A%2F%2Fwww.breakingpoint2.com&hashtags=HSBP2" onclick="window.open(this.href, 'targetWindow', 'toolbar=no, location=no, status=sno, menubar=no, scrollbars=yes, resizable=yes, width=600,height=400');return false;">#hsbp2</a></h2>
+					<h4>People are everywhere, but discussions happen here..</h4>
+				</div>
+				<div class="discussion-buttons">
+					<div class="row">
+						<div class="span3">
+							<div class="discus-btn"><a class="btn btn-facebook btn-block" href="http://facebook.com/sharer.php?u=http://www.breakingpoint2.com" onclick="window.open(this.href, 'targetWindow', 'toolbar=no, location=no, status=sno, menubar=no, scrollbars=yes, resizable=yes, width=600,height=400');return false;"><span class="ss-icon">facebook</span> Share</a></div>
+						</div>
 
-		<hr />
+						<div class="span3">
+							<div class="discus-btn"><a class="btn btn-twitter btn-block" href="https://twitter.com/intent/tweet?text=%40hsperformance+Definitely+not+gonna+miss+this&url=http%3A%2F%2Fwww.breakingpoint2.com&hashtags=HSBP2" onclick="window.open(this.href, 'targetWindow', 'toolbar=no, location=no, status=sno, menubar=no, scrollbars=yes, resizable=yes, width=600,height=400');return false;"><span class="ss-icon">twitter</span> Tweet</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="discuss-twitter">
+					<a class="twitter-timeline" href="https://twitter.com/search?q=%23hsbp2" data-widget-id="327174569741910016">Tweets about "#hsbp2"</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
 
-		<div class="event-desc">
-			<h5>In order for us here at H&amp;S to continue to design innovative products, every now and then
-			we need to push a test vehicle to its absolute limits; we need to find its Breaking Point.</h5>
+			<div class="span6">
+				<div class="the-discussion">
+					<div class="the-discussion-head"><a onclick="reset();">Reload</a></div>
+					<div id="disqus_thread"></div>
+					<script type="text/javascript">
+					    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+					    var disqus_shortname = 'hsperformance'; // required: replace example with your forum shortname
+
+					    /* * * DON'T EDIT BELOW THIS LINE * * */
+					    (function() {
+					        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					    })();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -35,129 +81,112 @@
 	</div>
 </section>
 
-<section class="the-truck" id="truck">
+<section class="the-truck" id="specs">
 	<div class="container">
 		<div class="row">
 			<div class="offset1 span6">
 					<div class="section-heading inner">
-					<h2>The Truck</h2>
-					<h4>LML: A chance to prove itself</h4>
+					<h2>Breaking Point</h2>
+					<h4>Spec sheets</h4>
 				</div>
 
 				<div class="section-body">
-					<p>Now that we have a better idea of what the Scorpion is capable of, it's time to move on and give the GM crowd
-					some love. We've seen a lot of posts on our <a href="https://www.facebook.com/hsperformance?fref=ts" target="_blank">Facebook</a> page and heard <a href="http://www.hsperformance.com/1/" target="_blank">endless chatter</a> about the LML far out-performing
-					the Scorpion. Is all the talk legit? I guess we'll see. We don't really care who 'wins', we just need to see what the Duramax can do.</p>
-					<%= link_to "Get the specs on our LML Duramax 6.6L", new_user_registration_path, :class => "btn btn-success" %>
+					<p>Both engines are 100% stock (internally). We've bolted on the following additions to allow the engines to be pushed to their "Breaking Point".</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="vip-pass" id="vip">
+<section class="spec-sheet">
 	<div class="container">
-		<div class="section-heading">
-			<h2>VIP Pass</h2>
-			<h4>Go behind the scenes for a look at our shop, the Duramax and more.</h4>
-		</div>
+		<div class="row">
+			<div class="span6">
+				<div class="spec-text">
+					<h4>Breaking Point 1 - Spec Sheet</h4>
 
-		<div class="section-body">
-			<h4 class="bold text-center">Three reasons you'll want VIP access.</h4>
-			<ul class="checks">
-				<li><a href="#schedule">Meet ‘n’ Greet</a>: See our Duramax beforehand and walk part-by-part through the custom build. Also, get a virtual tour of H&amp;S headquarters - and the inner workings of our shop.</li>
-				<li>Attend the <a href="#schedule">Pre-Show Q&amp;A</a> and meet the men behind the Breaking Point: Casey, Bentley, Zane and Payton.</li>
-				<li>Be first in line to purchase our limited edition Breaking Point event t-shirts at a discounted VIP rate (only 250 shirts available, once they're gone, they're gone).</li>
-			</ul>
-		</div>
+					<strong>2011-2013 Ford Powerstroke 6.7L Scorpion</strong>
+					<ul>
+						<li><a href="http://www.hs-motorsports.com/" target="_blank">H&amp;S Motorsports</a> Dual High Pressure Fuel Pump Kit*<br />
+						<span>The factory fuel system is capable of around 500 HP, we needed more than that.</span></li>
+						<li><a href="http://www.hs-motorsports.com/" target="_blank">H&amp;S Motorsports</a> Custom Turbo*<br />
+						<span>Added to provide more air-flow to the engine.</span></li>
+						<li>Stock Transmission with <a href="http://www.hsperformance.com/mini-maxx/2011-2012-6-7l-ford-powerstroke-mini-maxx-street/" target="_blank">H&amp;S Transmission Tuning</a><br />
+						<span>No aftermarket options were available for this truck. We're currently working with a transmission builder in our quest to hold more power. Once we have this, we'll re-test.</span></li>
+						<li><a href="http://www.hsperformance.com/mini-maxx/" target="_blank">Mini Maxx Tuner</a> with H&amp;S Maxx Calibration Control (MCC) tuning on the ECM and TCM.<br />
+						<span>Now available for purchase.</span></li>
+					</ul>
+					<p>Results: 2.28.13<br />
+					Hit 884 horsepower and 1600+ lb*ft of torque before the transmission began to slip.</p>
+				</div>
+			</div>
 
-		<div class="vip-btn margin-top text-center">
-			<%= link_to "Get FREE VIP Access", new_user_registration_path, :class => "btn btn-success" %>
+			<div class="span6">
+				<div class="spec-text">
+					<h4>Breaking Point 2 - Spec Sheet</h4>
+
+					<strong>2011-2013 Chevy/GMC LML Duramax 6.6L</strong>
+					<ul>
+						<li><a href="http://www.hs-motorsports.com/" target="_blank">H&amp;S Motorsports</a> Dual High Pressure Fuel Pump Kit*<br />
+						<span>The factory fuel system is capable of around 500 HP, we needed more than that.</span></li>
+						<li><a href="http://www.pureflowairdog.com/airdogII.php" target="_blank">Airdog II</a> DF-165 Lift Pump<br />
+						<span>We needed to supply plenty of clean fuel to the high pressure fuel pumps.</span></li>
+						<li>Custom Compound Turbo Kit (fabricated by H&amp;S Motorsports)<br />
+						<span>This kit was added to provide more air-flow to the engine.</span></li>
+						<li><a href="http://www.atsdiesel.com/ats2/" target="_blank">ATS</a> built Allison Transmission<br />
+						<span>The stock transmission slipped in our pre-run tests at 568 HP. We know the engine in the LML is capable of more than that, so we need a transmission that will allow us to push the limits further.</span></li>
+						<li><a href="http://www.hsperformance.com/mini-maxx/" target="_blank">Mini Maxx Tuner</a> with H&amp;S Maxx Calibration Control (MCC) Tuning<br />
+						<span>We're currently developing the MCC software for the 2011-2013 6.6L Duramax. For updates, sign up for our <a href="http://www.hsperformance.com/newsletter/" target="_blank">H&amp;S Performance newsletter</a>.</span></li>
+						<li><a href="http://www.bmfwheels.com/wheels/novakane.html?lug=8&style=death-metal-black" target="_blank">BMF Wheels</a> Novakane 8 in "Death Metal"<br />
+						<span>Why? Well, because we love their wheels.</span></li>
+					</ul>
+					<p>Results: To be determined 4.25,13</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12 text-center margin-top">
+				<span class="small-text">*In development for release to public. For updates, sign up for the H&amp;S Motorsports newsletter.</span>
+			</div>
 		</div>
 	</div>
 </section>
 
-<section class="event-schedule inner" id="schedule">
+<section class="tshirts" id="tshirts">
+	<div class="container">
+		<div class="row">
+			<div class="offset7 span5">
+				<div class="section-heading">
+					<h2>Breaking Point Tee's</h2>
+					<h4>"Been there, done that, forgot the t-shirt." - said no one ever</h4>
+				</div>
+
+				<div class="section-body">
+					<p>Originally, we were only going to print enough tee's for our own crew. Then we realized it's not just our event.</p>
+					<p>However, only 250 people will be able to purchase a shirt. If you're only mildly interested, skip it to make room for someone else.</p>
+					<p>Although, if you want to be one of the 250...</p>
+					<a href="http://www.hsperformance.com/bpshirts" target="_blank" class="btn btn-success">Buy Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="giveaways" id="giveaways">
 	<div class="container">
 		<div class="section-heading inner text-center">
-			<h2>Schedule of Events</h2>
-			<h4>We hope you can make it.</h4>
+			<h2>Giveaway</h2>
+			<h4>Get 3 FREE issues of Diesel Tech (it's on us)</h4>
 		</div>
 
-		<div class="section-body">
-			<div class="row">
-				<div class="span4">
-					<div class="schedule-head">
-						<h4>Tuesday <span class="pull-right">April 23</span></h4>
-					</div>
-
-					<div class="schedule-body">
-						<h3>Meet 'n' Greet</h3>
-						<h6>@ 1:00pm (MST) | 2:00pm (CST)</h6>
-
-						<div class="schedule-desc">
-							Go behind the scenes for a virtual tour of our shop and walk part-by-part through the custom build of our LML Duramax.
-						</div>
-
-						<div class="schedule-btn text-center">
-							<%= link_to "Get on the list.", new_user_registration_path, :class => "btn btn-success" %>
-						</div>
-						<div class="icon vip"></div>
-						<div class="icon hd"></div>
-					</div>
-				</div>
-
-				<div class="span8">
-					<div class="row">
-						<div class="span8">
-							<div class="schedule-head">
-								<h4>Thursday <span class="pull-right">April 25</span></h4>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="span4">
-							<div class="schedule-body">
-								<h3>Pre-Show Q&amp;A</h3>
-								<h6>@ 12:00pm (MST) | 1:00pm (CST)</h6>
-
-								<div class="schedule-desc">
-									Listen to Casey, Bentley, Zane and Payton field online questions from other industry professionals.
-								</div>
-
-								<div class="schedule-btn text-center">
-									<%= link_to "Get on the list.", new_user_registration_path, :class => "btn btn-success" %>
-								</div>
-								<div class="icon vip"></div>
-								<div class="icon hd"></div>
-							</div>
-						</div>
-
-						<div class="span4">
-							<div class="schedule-body">
-								<h3>Breaking Point 2</h3>
-								<h6>@ 1:00pm (MST) | 2:00pm (CST)</h6>
-
-								<div class="schedule-desc">
-									Can the LML take as much abuse as the Scorpion? We'll find out together - LIVE.
-								</div>
-
-								<div class="schedule-btn text-center no-btn">
-									Open to the public.<br />
-									No pass required.
-								</div>
-								<div class="icon hd"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="giveaway-body">
+			<p>We're big fans of their magazine, we think you'll like it too.</p>
+			<a href="http://www.harrispublishingpromotions.com/breakingpoint2/" target="_blank" class="btn btn-success">Get your FREE issues</a>
 		</div>
 	</div>
 </section>
-
-<section class="faq" id="faq">
+<hr id="faq" />
+<section class="faq">
 	<div class="container">
 		<div class="section-heading text-center">
 			<h2>FAQ</h2>
@@ -220,3 +249,21 @@
 		</div>
 	</div>
 </section>
+
+<% content_for :footer do %>
+
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'hsperformance'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    
+
+<% end %>

@@ -10,6 +10,15 @@
 	font-size: 12px;
 }
 
+.site-logout {
+	@include border-top-radius(4px);
+	background-color: $white;
+	padding: 5px 10px;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+}
+
 // HOME PAGE
 
 .site-header {
@@ -100,7 +109,7 @@
 						}
 					}
 
-					&.recap, &.events {
+					&.recap, &.events, &.giveaways {
 						border-left: 1px dashed #666;
 
 						a {
@@ -114,7 +123,7 @@
 						}
 					}
 
-					&.events {
+					&.events, &.giveaways {
 						margin-left: 82px;
 					}
 
@@ -367,10 +376,10 @@ section.recap {
 }
 
 section.the-truck {
-	background: url($cdnPath + "images/gmc-truck2.jpg") center top no-repeat;
-	height: 500px - 75;
-
+	background: url($cdnPath + "images/gmc-truck3.jpg?v=3") center center no-repeat;
+	height: 365px;
 	margin-top: 0px;
+	padding-top: 75px;
 }
 
 section.vip-pass {
@@ -460,6 +469,8 @@ section.event-schedule {
 }
 
 section.faq {
+	padding-top: 0px;
+
 	.section-body {
 		ul {
 			//list-style-image: image-url("list-question2.png");
@@ -948,6 +959,9 @@ section.vip-page {
 }
 
 // LIVE EVENT PAGES
+body.home section.video-player {
+	margin-top: 0px;
+}
 
 section.video-player {
 	background: url($cdnPath + "images/black-bg.jpg") center top repeat-y;
@@ -973,7 +987,7 @@ section.video-player {
 	}
 
 	.the-stream {
-		background-color: $white;
+		background-color: #000;
 		min-height: 348px;
 	}
 }
@@ -982,6 +996,10 @@ body.vip section.the-truck {
 	background: url($cdnPath + "images/gmc-truck3.jpg?v=3") center top no-repeat;
 	height: 365px;
 	margin-top: 0px;
+}
+
+body.home section.spec-sheet {
+	padding-top: 0;
 }
 
 section.spec-sheet {
@@ -999,6 +1017,7 @@ section.spec-sheet {
 		ul {
 			margin: 0;
 			margin-bottom: 30px;
+			margin-left: 20px;
 			padding: 0;
 
 			span {
@@ -1006,6 +1025,73 @@ section.spec-sheet {
 			}
 		}
 	}
+}
+
+section.giveaways {
+	.giveaway-body {
+		background: url($cdnPath + "images/Giveaways.jpg") center 75px no-repeat;
+		padding-top: 435px + 75;
+		text-align: center;
+	}
+}
+
+body.home section.discussion {
+	.discussion-heading {
+		margin: 75px 0px;
+		padding: 0px 10px;
+	}
+
+	.discuss-twitter {
+		margin-top: 75px;
+		padding: 0px 10px;
+	}
+
+	.discus-btn {
+		padding: 0px 10px;
+	}
+
+	.btn {
+
+		.ss-icon {
+			display: inline-block;
+			line-height: 1;
+			font-size: 1.1em;
+			top: 3px;
+			position: relative;
+		}
+	}
+
+	#disqus_thread {
+		@include border-radius(4px);
+		height: 596px !important; 
+		overflow: auto !important; 
+		background-color: $white;
+		padding: 10px;
+	}
+
+	.the-discussion {
+		@include border-radius(4px);
+		background: #e8e8e8;
+		background: rgba(0,0,0,0.1);
+		padding: 10px;
+
+		.the-discussion-head {
+			padding-bottom: 10px;
+			text-align: right;
+
+			a {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+section.tshirts {
+	background: url($cdnPath + "images/tee.jpg?v=3") center top no-repeat;
+	color: $white;
+	margin-top: 75px;
+	padding: 75px 0;
+	min-height: 536px - 150;
 }
 
 // Meet-n-greet
@@ -1030,8 +1116,8 @@ section.spec-sheet {
 	}
 
 	section.the-truck {
-		background: url($cdnPath + "images/gmc-truck2-x2.jpg") center top no-repeat;
-		background-size: 1340px 500px;
+		background: url($cdnPath + "images/gmc-truck3.jpg?v=3") center center no-repeat;
+		background-size: 1340px 365px;
 	}
 
 	section.event-schedule {
@@ -1062,5 +1148,15 @@ section.spec-sheet {
 	body.vip section.the-truck {
 		background: url($cdnPath + "images/gmc-truck3-x2.jpg?v=3") center top no-repeat;
 		background-size: 1340px 365px;
+	}
+
+	section.giveaways .giveaway-body {
+		background: url($cdnPath + "images/Giveaways-x2.jpg") center 75px no-repeat;
+		background-size: 924px 435px;
+	}
+
+	section.tshirts {
+		background: url($cdnPath + "images/tee-x2.jpg?v=3") center top no-repeat;
+		background-size: 1340px 570px;
 	}
 }
