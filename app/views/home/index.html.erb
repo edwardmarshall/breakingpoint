@@ -1,3 +1,16 @@
+<% content_for :headscripts do %>
+<script type="text/javascript">
+	function reset() {
+		DISQUS.reset({
+			reload: true,
+			config: function() {
+				this.page.identifier = "root";
+				this.page.url = "http://www.breakingpoint2.com/#!disqus_thread";
+			}
+		});
+	}
+</script>
+<% end %>
 <section class="discussion">
 	<div class="container">
 		<div class="row">
@@ -24,7 +37,9 @@
 			</div>
 
 			<div class="span6">
+
 				<div class="the-discussion">
+					<div class="the-discussion-head"><a onclick="reset();">Reload</a></div>
 					<div id="disqus_thread"></div>
 					<script type="text/javascript">
 					    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
